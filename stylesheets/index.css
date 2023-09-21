@@ -81,6 +81,29 @@ a, p, span {
 }
 
 
+.notification {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff3333; /* Choose your desired background color */
+  color: #fff; /* Choose your desired text color */
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other page content */
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
 /*===========================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===========================================*/
 /*=================THIS IS THE content OF THE ENTIRE PAGE=================*/
 .content-lr {
