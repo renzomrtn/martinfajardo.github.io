@@ -136,7 +136,7 @@ a, p, span {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
-  border-radius: 36% 64% 48% 52% / 62% 49% 51% 38% 
+  border-radius: 36% 64% 38% 62% / 59% 40% 60% 41% 
 }
 @media (max-width: 600px) {
   .image-container {
