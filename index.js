@@ -3,6 +3,6 @@ function closeNotification() {
     notification.style.display = "none";
 }
 
-// Show the notification initially (optional)
+// Show the notification initially
 var notification = document.getElementById("notification");
 notification.style.display = "block";

@@ -17,31 +17,15 @@ a, p, span {
 
 
 /*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
-.topnav-container {
+.topnav {
   height: 80px;
   background-color: #000000;
   display: flex;
   padding: 0 20px;
   justify-content: center; /* Horizontally center-align the items */
   align-items: center; /* Vertically center-align the items */
-}
-.topnav {
-  display: flex;
   width: 100%;
-  justify-content: space-between; /* Horizontally distribute content */
-  align-items: center; /* Vertically center-align the items */
   letter-spacing: 0.5px;
-}
-.topnav .left-nav {
-  margin-left: 200px; /* Add some spacing to the left */
-  color: #ffffff;
-  font-size: 30px; /* Adjust the font size as needed */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.topnav .right-nav {
-  margin-right: 200px; /* Add some spacing to the left */
-  display: flex;
-  justify-content: flex-end; /* Push the anchors to the right */
 }
 .topnav a {
   color: #ffffff;
@@ -93,7 +77,6 @@ a, p, span {
   text-align: center;
   z-index: 1000; /* Ensure it's above other page content */
 }
-
 .close {
   position: absolute;
   top: 0;
@@ -186,7 +169,7 @@ button {
   text-decoration: none;
   height: 60px;
   width: 170px;
-  border: #000000 2px solid;
+  border: #000000 3px solid;
   border-radius: 12px;
   background-color: transparent;
   color: #fff;
@@ -198,7 +181,7 @@ button {
 /* Hover styles for the button */
 button:hover {
   border: #ffffff 2px solid;
-  color: #000000;
+  color: #ebe7e7;
 }
 /* Adjust button styles for smaller screens */
 @media (max-width: 600px) {
@@ -224,53 +207,45 @@ button:hover {
   font-size: 40px; /* Adjust the icon size */
   text-decoration: none;
 }
-.socials .fa-youtube {
+.socials .fa-youtube, .fa-instagram, .fa-reddit, .fa-github, .fa-twitter, .fa-facebook {
   color: rgba(10, 153, 172, 1);
 }
 .socials .fa-youtube:hover {
   color: #ff0000; /* Lighter red on hover */
 }
-.socials .fa-instagram {
-  color: rgba(10, 153, 172, 1);
-}
 .socials .fa-instagram:hover {
   color: #ff0066; /* Lighter pink on hover */
-}
-.socials .fa-reddit {
-  color: rgba(10, 153, 172, 1);
 }
 .socials .fa-reddit:hover {
   color: #f07b06; /* Lighter orange on hover */
 }
-.socials .fa-github {
-  color: rgba(10, 153, 172, 1);
-}
 .socials .fa-github:hover {
   color: #00b3a1; /* Lighter teal on hover */
-}
-.socials .fa-twitter {
-  color: rgba(10, 153, 172, 1);
 }
 .socials .fa-twitter:hover {
   color: #00aced; /* Lighter blue on hover */
 }
-.socials .fa-facebook{
-  color: rgba(10, 153, 172, 1);
-}
 .socials .fa-facebook:hover {
   color: #0654fc; /* Lighter blue on hover */
 }
-@media (max-width: 600px) {
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
   .socials {
-  flex-direction: row;
-  gap: 10px; /* Adjust the gap between stacked icons */
-  align-items: center;
+    gap: 15px; /* Reduce gap between icons for smaller screens */
   }
   .socials a {
-  font-size: 15px; /* Decrease the icon size */
+    font-size: 30px; /* Adjust the icon size for smaller screens */
   }
 }
-
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .socials {
+    gap: 5px; /* Reduce gap between icons for smaller screens */
+  }
+  .socials a {
+    font-size: small;
+  }
+}
 
 /*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
 ::-webkit-scrollbar {
