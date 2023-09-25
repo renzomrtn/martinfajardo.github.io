@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -19,13 +18,13 @@ a, p, span {
 /*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
 .topnav {
   height: 80px;
-  background-color: #000000;
+  background-color: transparent;
   display: flex;
-  padding: 0 20px;
   justify-content: center; /* Horizontally center-align the items */
   align-items: center; /* Vertically center-align the items */
   width: 100%;
   letter-spacing: 0.5px;
+  position:fixed;
 }
 .topnav a {
   color: #ffffff;
@@ -50,10 +49,10 @@ a, p, span {
   transition: background-color 0.3s; /* Add a transition effect for the background color */
 }
 .topnav a.active:before { /* Style the active link's underline */
-  background-color: #70044c; /* Change this color to the desired active color */
+  background-color: rgba(10, 153, 172, 1);
 }
 .topnav a:hover {
-  color: #ff0066;
+  color: rgba(10, 153, 172, 1);
 }
   /* Style the navigation links for smaller screens */
 @media (max-width: 600px) {
@@ -71,7 +70,7 @@ a, p, span {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #ff3333; /* Choose your desired background color */
+  background-color: #ff3333;
   color: #fff; /* Choose your desired text color */
   padding: 10px;
   text-align: center;
@@ -87,14 +86,18 @@ a, p, span {
 
 
 
-/*===========================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===========================================*/
-/*=================THIS IS THE content OF THE ENTIRE PAGE=================*/
-.content-lr {
-  margin: 100px;
+/* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
+/* ==================== UPPER ===================== */
+.upper {
+  height: fit-content;
+  width: 100%;
+  padding: 100px;
   align-content: center;
   align-items: center;
-  display: flex; /* Use flexbox for layout */
+  display: flex;
+  border: #000000 solid 1px;
 }
+
 /* Media query for smaller screens */
 @media (max-width: 600px) {
   .content-lr {
@@ -148,22 +151,20 @@ a, p, span {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   justify-content: center; /* Center content vertically */
+  border: #000000 solid 1px;
 }
 
 .martinfajardo {
-  font-family: 'Open Sans', Helvetica, Arial;
-  color: #000000;
+  font-family: 'FontName', sans-serif;
+  color: #f3f0f0;
 }
 .title {
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-.dev {
+  text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
   color: #000000;
-  text-shadow: 2px 2px 4px rgb(255, 255, 255, 0.8);
 }
 .shadow-text {
-  text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 button {
   text-decoration: none;
@@ -171,7 +172,7 @@ button {
   width: 170px;
   border: #000000 3px solid;
   border-radius: 12px;
-  background-color: transparent;
+  background-color: rgba(10, 153, 172, 1);
   color: #fff;
   font-family: Verdana;
   margin: 20px;
@@ -180,8 +181,7 @@ button {
 }
 /* Hover styles for the button */
 button:hover {
-  border: #ffffff 2px solid;
-  color: #ebe7e7;
+  background-color: #13d7e6;;
 }
 /* Adjust button styles for smaller screens */
 @media (max-width: 600px) {
@@ -197,36 +197,31 @@ button:hover {
 /*============THIS IS THE SOSCIALS FOR THE ENTIRE ============*/
 .socials {
   height:fit-content;
-  float: left;
-  margin: 10px auto;
+  justify-content: center;
+  padding: 10px;
   display: flex;
   align-items: center;
   gap: 30px; /* Adjust the gap between icons */
+  border: #000000 solid 1px;
 }
 .socials a {
   font-size: 40px; /* Adjust the icon size */
   text-decoration: none;
 }
-.socials .fa-youtube, .fa-instagram, .fa-reddit, .fa-github, .fa-twitter, .fa-facebook {
+.socials .fa-github, .fa-slack, .fa-discord, .fa-linkedin {
   color: rgba(10, 153, 172, 1);
 }
-.socials .fa-youtube:hover {
-  color: #ff0000; /* Lighter red on hover */
-}
-.socials .fa-instagram:hover {
-  color: #ff0066; /* Lighter pink on hover */
-}
-.socials .fa-reddit:hover {
-  color: #f07b06; /* Lighter orange on hover */
-}
 .socials .fa-github:hover {
-  color: #00b3a1; /* Lighter teal on hover */
+  color: #00b3a1;
 }
-.socials .fa-twitter:hover {
-  color: #00aced; /* Lighter blue on hover */
+.socials .fa-slack:hover {
+  color: #4e0a5f;
 }
-.socials .fa-facebook:hover {
-  color: #0654fc; /* Lighter blue on hover */
+.socials .fa-discord:hover {
+  color:#5e1ff1;
+}
+.socials .fa-linkedin:hover {
+  color:#126ce2;
 }
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -246,6 +241,15 @@ button:hover {
     font-size: small;
   }
 }
+
+/* ==================== MIDDLE ==================== */
+.middle {
+  height: fit-content;
+  width: 100%;
+  padding: 100px;
+  border: #000000 solid 1px;
+}
+
 
 /*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
 ::-webkit-scrollbar {

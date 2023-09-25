@@ -21,6 +21,7 @@ body {
   align-items: center; /* Vertically center-align the items */
   width: 100%;
   letter-spacing: 0.5px;
+  position:fixed;
 }
 .topnav a {
   color: #ffffff;
@@ -33,7 +34,7 @@ body {
   border-bottom: 3px solid transparent;
   position: relative; /* Add this to position the pseudo-element */
 }
-.topnav a[href="index.html"]:before {
+.topnav a[href="works.html"]:before {
   content: "";
   position: absolute;
   bottom: -3px; /* Adjust the distance of the underline from the text */
@@ -93,7 +94,7 @@ body {
 }
 
 .works {
-  margin: 60px 0 60px 100px;
+  padding: 100px 0 60px 100px;
 }
 
 .workcontents {
