@@ -45,10 +45,10 @@ body {
   transition: background-color 0.3s; /* Add a transition effect for the background color */
 }
 .topnav a.active:before { /* Style the active link's underline */
-  background-color: #70044c; /* Change this color to the desired active color */
+  background-color: rgba(10, 153, 172, 1);
 }
 .topnav a:hover {
-  color: #ff0066;
+  color: #10e7c3;
 }
   /* Style the navigation links for smaller screens */
 @media (max-width: 600px) {
