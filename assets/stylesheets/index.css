@@ -168,7 +168,7 @@ button {
   text-decoration: none;
   height: 60px;
   width: 170px;
-  border: #000000 3px solid;
+  border: #000000 2px solid;
   border-radius: 12px;
   background-color: rgba(10, 153, 172, 1);
   color: #fff;
@@ -203,7 +203,7 @@ button:hover {
   font-size: 40px; /* Icon size */
   text-decoration: none;
 }
-.socials .fa-github, .fa-slack, .fa-discord, .fa-linkedin {
+.socials .fa-github, .fa-slack, .fa-buymeacoffee, .fa-linkedin, .fa-dev, .fa-mastodon {
   color: rgba(10, 153, 172, 1);
 }
 .socials .fa-github:hover {
@@ -212,11 +212,17 @@ button:hover {
 .socials .fa-slack:hover {
   color: #4e0a5f;
 }
-.socials .fa-discord:hover {
-  color:#5e1ff1;
+.socials .fa-buymeacoffee:hover {
+  color:#d1f11f;
 }
 .socials .fa-linkedin:hover {
   color:#126ce2;
+}
+.socials .fa-dev:hover {
+  color:#ceced3;
+}
+.socials .fa-mastodon:hover {
+  color:#5b12e2;
 }
 @media screen and (max-width: 768px) {
   .socials {
@@ -253,7 +259,7 @@ button:hover {
 }
 .right2 {
   width: 50%;
-  height: 250px; 
+  height: fit-content;
   border: #000000 solid 1px;
   padding: 20px;
 }
@@ -276,7 +282,7 @@ button:hover {
 }
 .right3 {
   width: 50%;
-  height: 250px; 
+  height: fit-content;
   border: #000000 solid 1px;
   padding: 20px;
 }
