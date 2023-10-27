@@ -16,47 +16,34 @@ a, p, span {
 
 /*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
 .topnav {
-  height: 80px;
-  background-color: #000000;
+  background-color: rgba(10, 153, 172, 1);
   display: flex;
-  padding: 0 20px;
   justify-content: center;
   align-items: center;
   width: 100%;
   letter-spacing: 0.5px;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .topnav a {
   color: #ffffff;
   text-align: center;
   padding: 14px 30px;
-  margin: 0 15px;
   text-decoration: none;
   font-size: 17px;
-  transition: color 0.3s;
   border-bottom: 3px solid transparent;
-  position: relative; /* Add this to position the pseudo-element */
+  position: relative;
 }
-.topnav a[href="index.html"]:before {
-  content: "";
-  position: absolute;
-  bottom: -3px; /* Distance of the underline from the text */
-  left: 50%; /* Center the underline relative to the anchor text */
-  transform: translateX(-50%); /* Center the underline horizontally */
-  width: 50px; 
-  height: 3px; /* Thickness of the underline */
-  transition: background-color 0.3s; 
-}
-.topnav a.active:before { 
-  background-color: rgba(10, 153, 172, 1);
+.topnav a.active { 
+  color: black;
 }
 .topnav a:hover {
-  color: #10e7c3;
+  color: #575e5c;
 }
 @media (max-width: 600px) {
-  .topnav a {
-  float: none;
-  display: block;
-  flex-direction: row;
+  .topnav {
+      flex-direction: column;
+      align-items: flex-start;
   }
 }
 
@@ -148,11 +135,7 @@ a, p, span {
 }
 .hi {
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 2px 2px 4px rgba(10, 153, 172, 1);
   color: #000000;
-}
-.shadow-text {
-  text-shadow: 2px 2px 4px rgb(8, 185, 141);
 }
 button {
   text-decoration: none;
@@ -262,11 +245,11 @@ button:hover {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #afaeae;
 }
 ::-webkit-scrollbar-thumb {
-  background: #155b94;
+  background: #2d2d2e; 
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0b2e4b;
+  background: #080808;
 }

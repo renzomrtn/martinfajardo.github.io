@@ -14,14 +14,13 @@ body {
 /*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
 .topnav {
   height: 80px;
-  background-color: #000000;
+  background-color: rgba(10, 153, 172, 1);
   display: flex;
   padding: 0 20px;
-  justify-content: center; /* Horizontally center-align the items */
-  align-items: center; /* Vertically center-align the items */
+  justify-content: center;
+  align-items: center;
   width: 100%;
   letter-spacing: 0.5px;
-  position:fixed;
 }
 .topnav a {
   color: #ffffff;
@@ -34,24 +33,12 @@ body {
   border-bottom: 3px solid transparent;
   position: relative; /* Add this to position the pseudo-element */
 }
-.topnav a[href="works.html"]:before {
-  content: "";
-  position: absolute;
-  bottom: -3px; /* Adjust the distance of the underline from the text */
-  left: 50%; /* Center the underline relative to the anchor text */
-  transform: translateX(-50%); /* Center the underline horizontally */
-  width: 50px; /* Adjust the width of the underline */
-  height: 3px; /* Adjust the thickness of the underline */
-  background-color: transparent; /* Set the initial background color */
-  transition: background-color 0.3s; /* Add a transition effect for the background color */
-}
-.topnav a.active:before { /* Style the active link's underline */
-  background-color: rgba(10, 153, 172, 1);
+.topnav a.active { 
+  color: rgb(0, 0, 0);
 }
 .topnav a:hover {
-  color: #10e7c3;
+  color: #575e5c;
 }
-  /* Style the navigation links for smaller screens */
 @media (max-width: 600px) {
   .topnav a {
   float: none;
