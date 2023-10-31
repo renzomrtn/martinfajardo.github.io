@@ -6,7 +6,6 @@
 body {
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  cursor: default;
 }
 
 a, p, span {
@@ -18,8 +17,8 @@ a, p, span {
 .sidebar {
   position: fixed;
   left: 0;
-  top: 0;
-  height: 100vh;
+  top: 30px;
+  height: 500px;
   width: 80px;
   background: linear-gradient(to bottom, #4e54c8, #8f94fb);
   display: flex;
@@ -44,15 +43,30 @@ a, p, span {
     color: white;
 }
 .sidebar a.active {
-    color: rgb(230, 65, 65);
+    color: white;
 }
 .sidebar a.active:hover {
     color: white
 }
-.first-link, .logo {
+ .logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: 150px;
+    width: 40px;
+  }
+  .sidebar a {
+    font-size: 15px;
+    gap: 10px;
+    margin: 10px;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 
@@ -162,7 +176,9 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 button:hover {
-  background: linear-gradient(to right, #5e64da, #9ea2f8);;
+  background: linear-gradient(to right, #5e64da, #9ea2f8);
+  transform: scale(1.03);
+  transition: 0.3s ease;
 }
 @media (max-width: 600px) {
   button {
@@ -175,38 +191,25 @@ button:hover {
   }
 }
 .socials {
-  height:fit-content;
-  justify-content: center;
-  padding: 10px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 30px; /* Gap between icons */
+  gap: 30px;
+  padding: 10px;
+  height: fit-content;
 }
 .socials a {
-  font-size: 40px; /* Icon size */
+  font-size: 40px;
   text-decoration: none;
-}
-.socials .fa-github, .fa-slack, .fa-buymeacoffee, .fa-linkedin, .fa-dev, .fa-mastodon {
   color: #8f94fb;
+  transition: color 0.3s ease;
 }
-.socials .fa-github:hover {
+.socials a:hover {
   color: #00b3a1;
+  transform: scale(1.2);
+  transition: 0.3s ease;
 }
-.socials .fa-slack:hover {
-  color: #4e0a5f;
-}
-.socials .fa-buymeacoffee:hover {
-  color:#d1f11f;
-}
-.socials .fa-linkedin:hover {
-  color:#126ce2;
-}
-.socials .fa-dev:hover {
-  color:#ceced3;
-}
-.socials .fa-mastodon:hover {
-  color:#5b12e2;
-}
+
 @media screen and (max-width: 768px) {
   .socials {
     gap: 15px;
