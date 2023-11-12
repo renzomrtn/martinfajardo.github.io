@@ -160,7 +160,7 @@ a, p, span {
   font-family: 'Poppins';
   color: #000000;
 }
-button {
+.button1 {
   text-decoration: none;
   height: 60px;
   width: 170px;
@@ -173,13 +173,13 @@ button {
   padding: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
-button:hover {
+.button1:hover {
   background: linear-gradient(to right, #5e64da, #9ea2f8);
   transform: scale(1.03);
   transition: 0.3s ease;
 }
 @media (max-width: 600px) {
-  button {
+  .button1 {
   width: 100%;
   max-width: 80px;
   height: auto;
@@ -269,6 +269,51 @@ button:hover {
     padding: 20px;
   }
 }
+
+/* ========================= LOWER ========================== */
+.lower {
+  color: #000000;
+  padding: 100px;
+  width: 100%;
+  font-family: 'Poppins';
+}
+.lower-inner {
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card1, .card2 {
+  border: #7e85f7 solid 2px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 10px;
+  width: 48%;
+  height: 225px;
+  padding: 20px;
+  display: flex;
+}
+.martinstudios, .pandalivery {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px 20px 0px 5px;
+}
+.date {
+  font-size: 12px;
+}
+.card1-content {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .card1 {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
 /*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
 ::-webkit-scrollbar {
   width: 10px;
