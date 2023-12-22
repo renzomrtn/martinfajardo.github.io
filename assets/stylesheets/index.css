@@ -5,10 +5,25 @@
 }
 
 body {
+  transition: background-color 0.5s ease;
   background-color: #ffffff;
+  color: #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode .hi {
+  color: white;
+} 
+.dark-mode .hi2 {
+  color: white;
+}
+.dark-mode .button1 {
+  border: #ffffff 2px solid;
+}
 a, p, span {
   cursor: default;
 }
@@ -48,6 +63,10 @@ a, p, span {
 }
 .sidebar a.active:hover {
     color: white
+}
+.toggle {
+  cursor: pointer;
+  font-size: 24px;
 }
  .logo {
   width: 40px;
@@ -226,7 +245,6 @@ a, p, span {
 
 /* ========================= MIDDLE ========================== */
 .middle {
-  color: #000000;
   padding: 100px;
   width: 100%;
   font-family: 'Poppins';
@@ -240,7 +258,6 @@ a, p, span {
   align-items: center;
 }
 .slide1, .slide2, .slide3, .slide4 {
-  background-color: white;
   margin: 10px;
   width: 48%;
   height: 500px;
@@ -272,7 +289,6 @@ a, p, span {
 
 /* ========================= LOWER ========================== */
 .lower {
-  color: #000000;
   padding: 100px;
   width: 100%;
   font-family: 'Poppins';
@@ -288,7 +304,6 @@ a, p, span {
 .card1, .card2 {
   border: #7e85f7 solid 2px;
   border-radius: 15px;
-  background-color: white;
   margin: 10px;
   width: 48%;
   height: 225px;
