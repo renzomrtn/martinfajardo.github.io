@@ -68,6 +68,9 @@ a, p, span {
   cursor: pointer;
   font-size: 24px;
 }
+.dark-mode .toggle i {
+  color: #fff; /* Set the color for the dark mode icon */
+}
  .logo {
   width: 40px;
   height: 40px;
