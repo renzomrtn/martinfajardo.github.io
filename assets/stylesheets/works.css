@@ -2,12 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
-  body {
-    background-color: #ffffff;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+}
+body {
+  transition: background-color 0.5s ease;
+  background-color: #ffffff;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 
 
 /*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
@@ -15,7 +21,8 @@
   position: fixed;
   left: 0;
   top: 30px;
-  height: 500px;
+  padding: 20px 0 20px 0;
+  height: fit-content;
   width: 80px;
   background: linear-gradient(to bottom, #4e54c8, #8f94fb);
   display: flex;
@@ -27,10 +34,10 @@
   border-bottom-right-radius: 15px;
 }
 .sidebar a {
-  color: #1f1d1d;
-  font-size: 24px;
-  text-decoration: none;
-  margin-top: 90px;
+    color: #1f1d1d;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 50px;
 }
 .sidebar a:hover i, .logo:hover {
   transform: scale(1.2);
