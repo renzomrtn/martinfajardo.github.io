@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  transition: background-color 0.5s ease;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode .hi {
+  color: white;
+} 
+.dark-mode .hi2 {
+  color: white;
+}
+.dark-mode .button1 {
+  border: #ffffff 2px solid;
+}
+
+a, p, span {
+  cursor: default;
+}
+
+
+/*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 30px;
+  padding: 20px 0 20px 0;
+  height: fit-content;
+  width: 80px;
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:flex-start;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.sidebar a {
+    color: #1f1d1d;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 50px;
+}
+.sidebar a:hover i, .logo:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+.sidebar a:hover{
+    color: white;
+}
+.sidebar a.active {
+    color: white;
+}
+.sidebar a.active:hover {
+    color: white
+}
+.toggle {
+  cursor: pointer;
+  font-size: 24px;
+}
+.dark-mode .toggle i {
+  color: #fff;
+}
+ .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: 150px;
+    width: 40px;
+  }
+  .sidebar a {
+    font-size: 15px;
+    gap: 10px;
+    margin: 10px;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+/* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
+/* ========================= MIDDLE ========================== */
+.middle {
+  padding: 100px;
+  width: 100%;
+  font-family: 'Poppins';
+}
+.middle-inner {
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.slide1, .slide2, .slide3, .slide4 {
+  margin: 10px;
+  width: 48%;
+  height: 500px;
+  padding: 10px;
+  border: #7e85f7 solid 2px;
+  border-radius: 15px;
+}
+.slide1:hover, .slide2:hover, .slide3:hover, .slide4:hover {
+  border: #4e54c8 solid 2px;
+  transition: 0.3s ease;
+}
+.category {
+  text-align: center;
+}
+.slide1:hover, .slide2:hover, .slide3:hover, .slide4:hover {
+  .category {
+    color: #4e54c8;}
+}
+@media (max-width: 768px) {
+  .slide1, .slide2, .slide3, .slide4 {
+      width: 100%; /* Set the width to 100% for smaller screens */
+  }
+}
+@media (max-width: 768px) {
+  .middle {
+    padding: 20px;
+  }
+}
+
+/* ========================= LOWER ========================== */
+.lower {
+  padding: 100px;
+  width: 100%;
+  font-family: 'Poppins';
+}
+.lower-title {
+  margin: 50px;
+}
+.lower-inner {
+  margin: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card1, .card2 {
+  border: #7e85f7 solid 2px;
+  border-radius: 15px;
+  margin: 10px;
+  width: 48%;
+  height: 225px;
+  padding: 20px;
+  display: flex;
+}
+.martinstudios, .pandalivery {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px 20px 0px 5px;
+}
+.date {
+  font-size: 12px;
+}
+.card1-content {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .card1 {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+/*===========================================THIS IS THE SCROLL BAR FOR THE ENTIRE PAGE===========================================*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #afaeae;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2d2e; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #080808;
+}
