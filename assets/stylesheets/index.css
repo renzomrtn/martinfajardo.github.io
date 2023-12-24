@@ -24,6 +24,7 @@ body {
 .dark-mode .button1 {
   border: #ffffff 2px solid;
 }
+
 a, p, span {
   cursor: default;
 }
@@ -70,7 +71,7 @@ a, p, span {
   font-size: 24px;
 }
 .dark-mode .toggle i {
-  color: #fff; /* Set the color for the dark mode icon */
+  color: #fff;
 }
  .logo {
   width: 40px;
@@ -296,6 +297,9 @@ a, p, span {
   padding: 100px;
   width: 100%;
   font-family: 'Poppins';
+}
+.lower-title {
+  margin: 50px;
 }
 .lower-inner {
   margin: 20px;

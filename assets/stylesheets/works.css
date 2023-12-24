@@ -14,6 +14,9 @@ body {
   background-color: black;
   color: white;
 }
+.dark-mode .toggle i {
+  color: #fff;
+}
 
 
 /*===========================================THIS IS THE NAVIGATION BAR FOR THE ENTIRE PAGE===========================================*/
