@@ -36,10 +36,10 @@ body {
   border-bottom-right-radius: 15px;
 }
 .sidebar a {
-    color: #1f1d1d;
-    font-size: 24px;
-    text-decoration: none;
-    margin: 50px;
+  color: #1f1d1d;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 50px;
 }
 .sidebar a:hover i, .logo:hover {
   transform: scale(1.2);
@@ -54,14 +54,21 @@ body {
 .sidebar a.active:hover {
   color: white
 }
-.logo {
+.toggle {
+  cursor: pointer;
+  font-size: 24px;
+}
+.dark-mode .toggle i {
+  color: #fff;
+}
+ .logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
   .sidebar {
-    height: 150px;
+    height: fit-content;
     width: 40px;
   }
   .sidebar a {
@@ -74,7 +81,6 @@ body {
     height: 20px;
   }
 }
-
 
 
 /*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
