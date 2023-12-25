@@ -42,6 +42,10 @@ a, p, span {
   text-align: center;
   z-index: 1000;
 }
+.notification .message {
+  display: block; /* or display: inline-block; */
+  margin-bottom: 10px; /* adjust the margin as needed */
+}
 .close {
   position: absolute;
   top: 0;

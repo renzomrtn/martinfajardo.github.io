@@ -91,3 +91,7 @@ body {
     align-items: center;
     background-color: #4e54c8;
 }
+.note {
+  margin: 50px;
+  text-align: center;
+}

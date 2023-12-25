@@ -9,9 +9,9 @@ if (isDarkMode) {
     // Change the image source based on dark mode state
     const poster = document.getElementById('poster');
     if (document.body.classList.contains('dark-mode')) {
-        poster.src = 'assets/images/stw.jpg';
+        poster.src = 'assets/images/banner (2).png';
     } else {
-        poster.src = 'assets/images/stw2.jpg';
+        poster.src = 'assets/images/banner (1).png';
     }
 }
 
@@ -27,9 +27,9 @@ function toggleDarkMode() {
     // Toggle the image source based on dark mode state
     const poster = document.getElementById('poster');
     if (document.body.classList.contains('dark-mode')) {
-        poster.src = 'assets/images/stw2.jpg';
+        poster.src = 'assets/images/banner (2).png';
     } else {
-        poster.src = 'assets/images/stw.jpg';
+        poster.src = 'assets/images/banner (1).png';
     }
 
     // Store the dark mode preference in localStorage
