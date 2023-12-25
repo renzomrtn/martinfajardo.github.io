@@ -114,7 +114,8 @@ body {
   }
 /*===========================================CONTENT==================================================*/
 .img {
- text-align: center;
+    transition: 0.5s ease;
+    text-align: center;
 }
 @media screen and (max-width: 768px) {
     .img {
