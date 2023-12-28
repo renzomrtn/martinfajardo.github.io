@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
   margin: 0;
+  font-family: 'Poppins';
 }
 
 body {
   transition: background-color 0.5s ease;
   background-color: #ffffff;
   color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .dark-mode {
@@ -31,14 +31,13 @@ a, p, span {
 
 
 /* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
-/* ========================= MIDDLE ========================== */
-.middle {
+/* ========================= container ========================== */
+.container {
   padding: 100px;
   width: 100%;
   font-family: 'Poppins';
 }
-.middle-inner {
-  margin: 20px;
+.container-inner {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -47,14 +46,14 @@ a, p, span {
 }
 .slide1, .slide2, .slide3, .slide4 {
   margin: 10px;
-  width: 48%;
+  width: 98%;
   height: 500px;
   padding: 10px;
-  border: #7e85f7 solid 2px;
+  border: #7e85f7 solid 1px;
   border-radius: 15px;
 }
 .slide1:hover, .slide2:hover, .slide3:hover, .slide4:hover {
-  border: #4e54c8 solid 2px;
+  border: #4e54c8 solid 1px;
   transition: 0.3s ease;
 }
 .category {
@@ -70,21 +69,20 @@ a, p, span {
   }
 }
 @media (max-width: 768px) {
-  .middle {
+  .container {
     padding: 20px;
   }
 }
 
-/* ========================= LOWER ========================== */
-.lower {
+/* ========================= experience ========================== */
+.experience {
   padding: 100px;
   width: 100%;
-  font-family: 'Poppins';
 }
-.lower-title {
+.experience-title {
   margin: 50px;
 }
-.lower-inner {
+.experience-inner {
   margin: 20px;
   position: relative;
   display: flex;
@@ -101,14 +99,14 @@ a, p, span {
   padding: 20px;
   display: flex;
 }
-.martinstudios, .pandalivery {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 5px 20px 0px 5px;
+.digitek, .pandalivery {
+  border-radius: 12px;
+  width: auto;
+  margin: 0px 20px 0px 5px;
 }
 .date {
   font-size: 12px;
+  color: #d4d3d3;
 }
 .card1-content {
   flex: 1;
