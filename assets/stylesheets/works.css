@@ -55,13 +55,6 @@ body {
 .flixplus {
     margin-bottom: 150px;
 }
-div img {
-    width: 550px;
-    height: auto;
-    border: 2px solid #0b2e4b;
-    border-radius: 10px;
-    cursor: pointer;
-}
 .work1imgs,
 .work2imgs {
     margin-bottom: 30px;

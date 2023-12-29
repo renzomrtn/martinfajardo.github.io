@@ -6,6 +6,7 @@
     padding: 20px 0 20px 0;
     height: fit-content;
     width: 80px;
+    height: auto;
     background: linear-gradient(to bottom, #4e54c8, #8f94fb);
     display: flex;
     flex-direction: column;
@@ -17,9 +18,9 @@
   }
   .sidebar a {
     color: #1f1d1d;
-    font-size: 24px;
+    font-size: 25px;
     text-decoration: none;
-    margin: 50px;
+    margin: 10px;
   }
   .sidebar a:hover i, .logo:hover {
     transform: scale(1.2);
@@ -31,9 +32,6 @@
   .sidebar a.active {
     color: white;
   }
-  .sidebar a.active:hover {
-    color: white
-  }
   .toggle {
     cursor: pointer;
     font-size: 24px;
@@ -44,7 +42,7 @@
    .logo {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 12px;
   }
   @media screen and (max-width: 768px) {
     .sidebar {
@@ -61,26 +59,3 @@
       height: 20px;
     }
   }
-  
-  /*
-  .notification {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #ff3333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000;
-  }
-  .close {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  */
-  
