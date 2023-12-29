@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -14,15 +14,6 @@ body {
 .dark-mode {
   background-color: black;
   color: white;
-}
-.dark-mode .hi {
-  color: white;
-} 
-.dark-mode .hi2 {
-  color: white;
-}
-.dark-mode .button1 {
-  border: #ffffff 2px solid;
 }
 
 
