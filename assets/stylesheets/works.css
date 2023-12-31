@@ -16,28 +16,7 @@ body {
   color: white;
 }
 /*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.column {
-  flex-basis: calc(33.33% - 10px); /* Adjusted width for 3 */
-  box-sizing: border-box;
-  padding-top: 5px;
-}
-@media screen and (max-width: 992px) {
-  .column {
-  flex-basis: calc(50% - 20px);
-  }
-}
-@media screen and (max-width: 600px) {
-  .column {
-  flex-basis: calc(100% - 20px);
-  }
-}
-
-.works {
+.myworks {
   margin: 50px 50px 0 120px;
 }
 .workcontents {
@@ -45,13 +24,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  text-align: center;
   padding: 10px;
 }
-.work1imgs,
-.work2imgs {
-  margin-bottom: 30px;
-  align-items: center;
+img {
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+.image :hover {
+  opacity: 0.8;
 }
 .project-a, .flixplus {
   border-radius: 12px;
