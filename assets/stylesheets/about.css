@@ -19,6 +19,39 @@ body {
 
 /* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
 /* ========================= container ========================== */
+.socmed {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.socmed-card a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #8f94fb;
+  transition: color 0.3s ease;
+}
+.socmed-card a:hover {
+  color: #00b3a1;
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .socmed-card {
+    gap: 15px;
+  }
+  .socmed-card a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .socmed-card {
+    gap: 5px;
+  }
+  .socmed-card a {
+    font-size: small;
+  }
+}
+/* ========================= container ========================== */
 .container {
   padding: 100px;
   width: 100%;
