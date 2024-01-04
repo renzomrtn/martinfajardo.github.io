@@ -30,11 +30,12 @@ body {
 img {
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
+  border: #8f94fb 1px solid;
 }
 .image :hover {
   opacity: 0.8;
 }
-.project-a, .flixplus {
+.project-a, .flixplus, .taskmaster {
   border-radius: 12px;
   width: 48%;
   height: 200px;
