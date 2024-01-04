@@ -31,12 +31,31 @@ img {
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
   border: #8f94fb 1px solid;
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Prevent images from stretching */
 }
-.image :hover {
+.image:hover {
   opacity: 0.8;
 }
-.project-a, .flixplus, .taskmaster {
+.project-a,
+.flixplus,
+.taskmaster {
   border-radius: 12px;
-  width: 48%;
-  height: 200px;
+  width: 100%;
+  max-width: 48%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .project-a,
+  .flixplus,
+  .taskmaster {
+    width: 48%;
+  }
+}
+@media (min-width: 1200px) {
+  .project-a,
+  .flixplus,
+  .taskmaster {
+    width: 32%;
+  }
 }
