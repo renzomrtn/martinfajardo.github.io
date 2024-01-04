@@ -106,13 +106,6 @@ div img {
 .modal.show .modal-content {
   transform: scale(3);
 }
-.close {
-  position: absolute;
-  top: 10px;
-  right: 30px;
-  font-size: 20px;
-  cursor: pointer;
-}
 @media screen and (min-width: 800px) {
   .modal.show .modal-content {
     transform: scale(2);
