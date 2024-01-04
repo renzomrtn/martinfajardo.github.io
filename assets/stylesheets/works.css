@@ -39,7 +39,9 @@ img {
 }
 .project-a,
 .flixplus,
-.taskmaster {
+.taskmaster,
+.spaceevader,
+.spaceevader2 {
   border-radius: 12px;
   width: 100%;
   max-width: 48%;
@@ -48,14 +50,18 @@ img {
 @media (min-width: 768px) {
   .project-a,
   .flixplus,
-  .taskmaster {
+  .taskmaster,
+  .spaceevader,
+  .spaceevader2 {
     width: 48%;
   }
 }
 @media (min-width: 1200px) {
   .project-a,
   .flixplus,
-  .taskmaster {
+  .taskmaster,
+  .spaceevader,
+  .spaceevader2 {
     width: 32%;
   }
 }
