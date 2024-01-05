@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Evader 2</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/works-format.css">
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="../components/scrollbar.css">
+  </head>
+  <body>
+    <div class="button">
+      <a href="../works.html">
+        <button class="button">Go back</button>
+      </a>
+    </div>
+    <div class="spaceevader">
+      <div class="row">
+        <div class="column">
+          <img src="../assets/images/se2-1.png" alt="homescreen1" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="../assets/images/se2-2.png" alt="homescreen2" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="../assets/images/se2-3.png" alt="categories" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="../assets/images/se2-4.png" alt="review" onclick="openModal(this)" style="width:100%">
+        </div>
+      </div>
+      <div class="text2">
+        <h3>Game Development: "Space Evader 2"</h3>
+          <p>
+            Space Evader 2 is an individual activity for the subject Introduction to Computing.
+          </p>
+          <br>
+          <p><b>When: </b>2023</p>
+          <p><b>Method: </b>Scratch</p>
+          <p><b>Role: </b>Author</p>
+          <br>
+          <p>
+            I thought the first game was good but it could use an upgrade. The goal for this one was Say Something, Fly Around, Go Right and Left, Go Up and Down, Change Costumes, Glide from Here to There, 
+            Grow and Shrink, Change Backdrops, Add a Sound. All of these were fulfilled. The ship can now grow and withstand the rocks and also boost itself to <i>evade</i> the rocks. But then because of that,
+            I had to make a few changes with the difficulty. The ship now moves faster and faster as the points go up which gives a challenge when evading.
+          </p>
+          <br>
+          <p>Want to try the game? <a href="https://scratch.mit.edu/projects/934391222/" target="_blank">Click This Link</a></p>
+      </div>
+    </div>
+
+    <!-- The modal -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Javascript -->
+    <script src="../assets/scripts/works.js"></script>
+    <script src="../assets/scripts/dark-mode.js"></script>
+  </body>
+</html>
