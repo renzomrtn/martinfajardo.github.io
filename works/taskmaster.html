@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/works-format.css">
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="../components/scrollbar.css">
+  </head>
+  <body>
+    <div class="button">
+      <a href="../works.html">
+        <button class="button">Go back</button>
+      </a>
+    </div>
+    <div class="spaceevader">
+      <div class="row">
+        <div class="column">
+            <img src="../assets/images/appsheet (1).png" alt="homescreen1" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../assets/images/appsheet (2).png" alt="homescreen2" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../assets/images/appsheet (3).png" alt="categories" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../assets/images/appsheet (4).png" alt="review" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../assets/images/appsheet (5).png" alt="review" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../assets/images/appsheet (6).png" alt="review" onclick="openModal(this)" style="width:100%">
+        </div>
+      </div>
+      <div class="text2">
+        <h3>App: TaskMaster</h3>
+          <p>
+            This Portfolio is an individual activity for the subject Introduction to Computing.
+          </p>
+          <br>
+          <p><b>When: </b>2023</p>
+          <p><b>Method: </b>Appsheet</p>
+          <p><b>Role: </b>Author</p>
+          <br>
+          <p>
+            This is my final output for the subject. The task was to make an app using Google Appsheet. We were told to choose and use a template from appsheet and just edit the contents. But I didn't liked the
+            template for the to do list so I made my own. I created my own database using Google Sheets and modified the UI for better user experience. The app has different views. First is the Task view which
+            contains the user's tasks, next is the Pending view which contains the user's pending tasks, next is the Task Calendar which shows the unfinished and not yet started tasks to inform the user and finally,
+            the About page of the app which contains information about the app- where I sorta trolled by adding Anakin Skywalker's quote about sand. The app also uses bot to send an email to the user once a task's
+            due date is near.
+          </p>
+          <br>
+          <p>Want to visit the app? <a href="#" target="_blank">Not Accessible</a></p>
+      </div>
+    </div>
+
+    <!-- The modal -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Javascript -->
+    <script src="../assets/scripts/works.js"></script>
+    <script src="../assets/scripts/dark-mode.js"></script>
+  </body>
+</html>
