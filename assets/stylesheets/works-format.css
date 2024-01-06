@@ -23,16 +23,19 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .column {
   flex-basis: calc(33.33% - 10px); /* Adjusted width for 3 */
   box-sizing: border-box;
   padding-top: 5px;
 }
+
 @media screen and (max-width: 992px) {
   .column {
     flex-basis: calc(50% - 20px);
   }
 }
+
 @media screen and (max-width: 600px) {
   .column {
     flex-basis: calc(100% - 20px);
@@ -42,6 +45,7 @@ body {
 .works {
   margin: 50px 50px 0 120px;
 }
+
 button {
   text-decoration: none;
   height: 50px;
@@ -55,6 +59,7 @@ button {
   padding: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
+
 .workcontents {
   margin: 50px 100px 50px 100px;
   display: flex;
@@ -63,10 +68,12 @@ button {
   justify-content: center;
   padding: 10px;
 }
+
 .projectanatomy,
 .flixplus {
   margin-bottom: 150px;
 }
+
 div img {
   width: 550px;
   height: auto;
@@ -74,6 +81,7 @@ div img {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .work1imgs,
 .work2imgs {
   margin-bottom: 30px;
@@ -94,25 +102,30 @@ div img {
   align-items: center;
   overflow: auto;
 }
+
 .modal-content {
   max-width: 90%;
   max-height: 90%;
   transition: transform 0.2s;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
+
 .modal.show .modal-content {
   transform: scale(3);
 }
+
 @media screen and (min-width: 800px) {
   .modal.show .modal-content {
     transform: scale(2);
   }
 }
+
 @media screen and (max-width: 767px) and (min-width: 601px) {
   .modal.show .modal-content {
     transform: scale(1); 
   }
 }
+
 @media screen and (max-width: 600px) {
   .modal.show .modal-content {
     transform: scale(0.8);

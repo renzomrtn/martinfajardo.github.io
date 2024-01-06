@@ -15,10 +15,12 @@ body.dark-mode {
   background-color: black;
   color: white;
 }
+
 /*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
 .myworks {
   margin: 50px 50px 0 120px;
 }
+
 .workcontents {
   margin: 50px 100px 50px 100px;
   display: flex;
@@ -27,6 +29,7 @@ body.dark-mode {
   text-align: center;
   padding: 10px;
 }
+
 img {
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
@@ -34,9 +37,11 @@ img {
   max-width: 100%; /* Make images responsive */
   height: auto; /* Prevent images from stretching */
 }
+
 .image:hover {
   opacity: 0.8;
 }
+
 .project-a,
 .flixplus,
 .space-evader,
@@ -48,6 +53,7 @@ img {
   max-width: 48%;
   height: auto;
 }
+
 @media (min-width: 768px) {
   .project-a,
   .flixplus,
@@ -58,6 +64,7 @@ img {
     width: 48%;
   }
 }
+
 @media (min-width: 1200px) {
   .project-a,
   .flixplus,

@@ -15,20 +15,27 @@ body.dark-mode {
   background-color: black;
   color: white;
 }
-.dark-mode .hi {
-  color: white;
-} 
-.dark-mode .hi2 {
+
+.dark-mode
+.hi {
   color: white;
 }
-.dark-mode .button1 {
+
+.dark-mode
+.hi2 {
+  color: white;
+}
+
+.dark-mode
+.button1 {
   border: #ffffff 2px solid;
 }
 
-a, p, span {
+a,
+p,
+span {
   cursor: default;
 }
-
 
 .notification {
   display: none;
@@ -42,10 +49,13 @@ a, p, span {
   text-align: center;
   z-index: 1000;
 }
-.notification .message {
+
+.notification
+.message {
   display: block; /* or display: inline-block; */
   margin-bottom: 10px; /* adjust the margin as needed */
 }
+
 .close {
   position: absolute;
   top: 0;
@@ -53,6 +63,7 @@ a, p, span {
   font-size: 20px;
   cursor: pointer;
 }
+
 .link-button {
   background-color: #4CAF50;
   color: white;
@@ -63,8 +74,6 @@ a, p, span {
   margin-right: 10px; /* Adjust as needed */
 }
 
-
-
 /* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
 /* ========================= UPPER ========================== */
 .upper {
@@ -74,47 +83,55 @@ a, p, span {
   align-items: center;
   display: flex;
 }
+
 @media (max-width: 600px) {
   .upper {
     padding: 20px;
   }
 }
+
 /* ============== LEFT =============== */
 .left {
   width: 40%;
   display: flex;
   justify-content: center;
 }
+
 .image-container {
   width: 100%;
   max-width: 500px;
   height: 500px;
   overflow: hidden;
 }
+
 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 36% 64% 38% 62% / 59% 40% 60% 41% 
 }
+
 @media (max-width: 600px) {
   .image-container {
   max-width: auto;
   height: auto;
   }
 }
+
 @media (max-width: 800px) {
   .image-container {
   max-width: auto;
   height: auto;
   }
 }
+
 @media (max-width: 1300px) {
   .image-container {
   max-width: auto;
   height: auto;
   }
 }
+
 /* ============== RIGHT =============== */
 .right {
   height:fit-content;
@@ -124,12 +141,15 @@ a, p, span {
   flex-direction: column;
   justify-content: center;
 }
+
 .hi2 {
   color: #000000;
 }
+
 .hi {
   color: #000000;
 }
+
 .button1 {
   text-decoration: none;
   height: 60px;
@@ -143,11 +163,13 @@ a, p, span {
   padding: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
+
 .button1:hover {
   background: linear-gradient(to right, #5e64da, #9ea2f8);
   transform: scale(1.03);
   transition: 0.3s ease;
 }
+
 @media (max-width: 600px) {
   .button1 {
   width: 100%;
@@ -158,6 +180,7 @@ a, p, span {
   padding: 5px 10px;
   }
 }
+
 .socials {
   display: flex;
   justify-content: center;
@@ -166,17 +189,20 @@ a, p, span {
   padding: 10px;
   height: fit-content;
 }
+
 .socials a {
   font-size: 40px;
   text-decoration: none;
   color: #8f94fb;
   transition: color 0.3s ease;
 }
+
 .socials a:hover {
   color: #00b3a1;
   transform: scale(1.2);
   transition: 0.3s ease;
 }
+
 @media screen and (max-width: 768px) {
   .socials {
     gap: 15px;
@@ -185,6 +211,7 @@ a, p, span {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 480px) {
   .socials {
     gap: 5px;
