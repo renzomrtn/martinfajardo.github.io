@@ -1,38 +1,48 @@
-// Check if dark mode preference is stored in localStorage
-const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-// Apply dark mode if the preference is true
-if (isDarkMode) {
-    document.body.classList.add('dark-mode');
-    document.querySelector('.toggle i').classList.add('fa-toggle-on');
-    document.querySelector('.toggle i').classList.remove('fa-toggle-off');
-    // Change the image source based on dark mode state
-    const poster = document.getElementById('poster');
-    if (document.body.classList.contains('dark-mode')) {
-        poster.src = 'assets/images/banner (2).png';
-    } else {
-        poster.src = 'assets/images/banner (1).png';
-    }
-}
-
+// Function to toggle dark mode
 function toggleDarkMode() {
-    // Toggle the dark mode class on the body
-    document.body.classList.toggle('dark-mode');
-
-    // Toggle the class for the icon
+    const body = document.body;
     const toggleIcon = document.querySelector('.toggle i');
+
+    // Toggle between light and dark mode classes
+    body.classList.toggle("dark-mode");
+
+    // Toggle between toggle icons
     toggleIcon.classList.toggle('fa-toggle-on');
     toggleIcon.classList.toggle('fa-toggle-off');
 
-    // Toggle the image source based on dark mode state
-    const poster = document.getElementById('poster');
-    if (document.body.classList.contains('dark-mode')) {
+    // You can also save the user's preference in localStorage for persistence
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+
+    if (body.classList.contains('dark-mode')) {
         poster.src = 'assets/images/banner (2).png';
     } else {
         poster.src = 'assets/images/banner (1).png';
     }
-
-    // Store the dark mode preference in localStorage
-    const isDarkModeNow = document.body.classList.contains('dark-mode');
-    localStorage.setItem('darkMode', isDarkModeNow.toString());
 }
+
+// Function to set the dark mode state
+function setDarkModeState(isDarkMode) {
+    const body = document.body;
+    const toggleIcon = document.querySelector('.toggle i');
+
+    // Set the dark mode state
+    if (isDarkMode) {
+        body.classList.add("dark-mode");
+    } else {
+        body.classList.remove("dark-mode");
+    }
+
+    // Toggle between toggle icons
+    toggleIcon.classList.toggle('fa-toggle-on', isDarkMode);
+    toggleIcon.classList.toggle('fa-toggle-off', !isDarkMode);
+}
+
+// Check if the user has a dark mode preference and set it
+document.addEventListener("DOMContentLoaded", function () {
+    const savedDarkMode = localStorage.getItem("darkMode");
+
+    // Set the initial dark mode state based on the saved preference
+    setDarkModeState(savedDarkMode === "true");
+});
+
