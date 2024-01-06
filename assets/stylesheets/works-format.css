@@ -73,7 +73,7 @@ button {
 div img {
   width: 550px;
   height: auto;
-  border: 2px solid #0b2e4b;
+  border: #8f94fb 1px solid;
   border-radius: 10px;
   cursor: pointer;
 }
