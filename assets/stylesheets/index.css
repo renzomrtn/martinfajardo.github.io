@@ -154,8 +154,8 @@ span {
   text-decoration: none;
   height: 60px;
   width: 170px;
-  border: #000000 2px solid;
-  border-radius: 12px;
+  border: #000000 1px solid;
+  border-radius: 1em;
   background: linear-gradient(to left, #4e54c8, #8f94fb);;
   color: #181616;
   font-family: Verdana;
@@ -176,7 +176,7 @@ span {
   max-width: 80px;
   height: auto;
   margin: 10px 0;
-  font-size: 6px;
+  font-size: 0.5em;
   padding: 5px 10px;
   }
 }
