@@ -18,22 +18,29 @@ body.dark-mode {
 
 /*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
 .myworks {
-  margin: 50px 50px 0 50px;
   text-align: center;
+}
+
+.workcontents {
+  align-items: center;
 }
 
 .developer,
 .creator {
-  margin-top: 100px;
+  border: red 1px solid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
+
 .developer h3,
-.creator h3{
-  margin: 50px 0 0 120px;
+.creator h3 {
+  margin: 0; /* Remove default margin */
 }
 
 hr {
-  margin: 0 auto; /* needed because h3 margin affects the alignment */
-  width: 90%;
+  margin: 0 auto; /* needed because margin affects the alignment */
+  width: 85%;
   border: none;
   border-top: 3px double #4e54c8;
   overflow: visible;
@@ -43,12 +50,10 @@ hr {
 
 .developer-content,
 .creator-content {
-  margin: 20px 100px 50px 100px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   text-align: center;
-  padding: 10px;
+  justify-content: center;
 }
 
 .developer-content img,
@@ -60,40 +65,24 @@ hr {
   height: auto; /* Prevent images from stretching */
 }
 
-.image:hover {
+.card:hover {
   opacity: 0.8;
 }
 
-.project-a,
-.flixplus,
-.space-evader,
-.space-evader2,
-.gsites-portfolio,
-.taskmaster {
+.card {
   border-radius: 12px;
   width: 100%;
-  max-width: 48%;
   height: auto;
 }
 
 @media (min-width: 768px) {
-  .project-a,
-  .flixplus,
-  .space-evader,
-  .space-evader2,
-  .gsites-portfolio,
-  .taskmaster {
+  .card {
     width: 48%;
   }
 }
 
 @media (min-width: 1200px) {
-  .project-a,
-  .flixplus,
-  .space-evader,
-  .space-evader2,
-  .gsites-portfolio,
-  .taskmaster {
+  .card {
     width: 32%;
   }
 }
