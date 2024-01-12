@@ -18,11 +18,32 @@ body.dark-mode {
 
 /*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
 .myworks {
-  margin: 50px 50px 0 120px;
+  margin: 50px 50px 0 50px;
+  text-align: center;
 }
 
-.workcontents {
-  margin: 50px 100px 50px 100px;
+.developer,
+.creator {
+  margin-top: 100px;
+}
+.developer h3,
+.creator h3{
+  margin: 50px 0 0 120px;
+}
+
+hr {
+  margin: 0 auto; /* needed because h3 margin affects the alignment */
+  width: 90%;
+  border: none;
+  border-top: 3px double #4e54c8;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+.developer-content,
+.creator-content {
+  margin: 20px 100px 50px 100px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -30,7 +51,8 @@ body.dark-mode {
   padding: 10px;
 }
 
-img {
+.developer-content img,
+.creator-content img {
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
   border: #8f94fb 1px solid;
