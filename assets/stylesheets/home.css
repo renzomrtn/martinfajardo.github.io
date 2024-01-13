@@ -31,6 +31,10 @@ body.dark-mode {
   border: #ffffff 1px solid;
 }
 
+.bttn {
+  margin: 20px;
+}
+
 .notification {
   display: none;
   position: fixed;
