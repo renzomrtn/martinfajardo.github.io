@@ -32,19 +32,39 @@ body.dark-mode {
   align-items: center;
 }
 
-.developer h3,
-.creator h3 {
-  margin: 0; /* Remove default margin */
-}
-
 hr {
-  margin: 0 auto; /* needed because margin affects the alignment */
+  margin: 0 auto; /* needed to keep the hr aligned */
   width: 90%;
   border: none;
   border-top: 3px double #4e54c8;
   overflow: visible;
   text-align: center;
   height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+hr.developed::after {
+  transition: background-color 0.5s ease;
+  background-color: #ffffff;
+  color: #4e54c8;
+  content: 'Developed Projects';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+hr.created::after {
+  background-color: #ffffff;
+  color: #4e54c8;
+  content: 'Created';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.dark-mode hr::after {
+  background-color: black;
 }
 
 .developer-content,
