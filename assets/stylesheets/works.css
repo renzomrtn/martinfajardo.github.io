@@ -27,7 +27,6 @@ body.dark-mode {
 
 .developer,
 .creator {
-  border: red 1px solid;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -40,7 +39,7 @@ body.dark-mode {
 
 hr {
   margin: 0 auto; /* needed because margin affects the alignment */
-  width: 85%;
+  width: 90%;
   border: none;
   border-top: 3px double #4e54c8;
   overflow: visible;
