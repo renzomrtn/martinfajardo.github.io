@@ -68,21 +68,21 @@ hr.created::after {
   background-color: black;
 }
 
-.developer-content,
-.creator-content {
+.content,
+.content {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
 }
 
-.developer-content img,
-.creator-content img {
+.content img,
+.content img {
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
   border: #8f94fb 1px solid;
-  max-width: 100%; /* Make images responsive */
-  height: auto; /* Prevent images from stretching */
+  max-width: 100%;
+  height: auto;
 }
 
 .card:hover,
