@@ -58,7 +58,7 @@ hr.created::after {
   transition: background-color 0.5s ease;
   background-color: #ffffff;
   color: #4e54c8;
-  content: 'Created';
+  content: 'Pixel Arts';
   padding: 0 4px;
   position: relative;
   top: -13px;
@@ -85,7 +85,8 @@ hr.created::after {
   height: auto; /* Prevent images from stretching */
 }
 
-.card:hover {
+.card:hover,
+.card2:hover {
   opacity: 0.8;
 }
 
@@ -93,6 +94,12 @@ hr.created::after {
   border-radius: 12px;
   width: 100%;
   height: auto;
+}
+
+.card2 {
+  border-radius: 12px;
+  width: 10%;
+  height: 300px;
 }
 
 @media (min-width: 768px) {
