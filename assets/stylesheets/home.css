@@ -74,28 +74,19 @@ body.dark-mode {
 
 /* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
 /* ========================= UPPER ========================== */
-.upper {
-  width: 100%;
-  padding: 100px;
-  align-content: center;
-  align-items: center;
-  display: flex;
-}
-
-@media (max-width: 600px) {
-  .upper {
-    padding: 20px;
-  }
-}
 
 .top {
   text-align: center;
 }
 
+#landscape-image {
+  width: 100%;
+  height: auto;
+}
+
 .top img {
   width: 100%;
 }
-
 
 /* ============== bot =============== */
 .bot {
