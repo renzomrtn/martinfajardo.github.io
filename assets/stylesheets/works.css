@@ -71,11 +71,13 @@ hr.songs::after {
   background-color: black;
 }
 
-.content {
+.content, .content {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .content img {
