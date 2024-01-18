@@ -20,6 +20,12 @@ body {
 }
 
 /*===========================================CONTENT==================================================*/
+
+.joke {
+  text-align: center;
+  background-color: rgb(6, 160, 109);
+}
+
 .img {
   transition: 0.5s ease;
   text-align: center;
