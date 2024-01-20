@@ -15,9 +15,9 @@ function toggleDarkMode() {
     localStorage.setItem("darkMode", isDarkMode);
 
     if (body.classList.contains('dark-mode')) {
-        poster.src = 'assets/images/banner (2).png';
+        poster.src = 'assets/images/donate/banner (2).png';
     } else {
-        poster.src = 'assets/images/banner (1).png';
+        poster.src = 'assets/images/donate/banner (1).png';
     }
 
     // Apply or remove dark-mode class from hr elements
