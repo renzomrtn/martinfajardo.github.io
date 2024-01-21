@@ -138,7 +138,7 @@ body.dark-mode {
 
 .card1,
 .card2 {
-  border: #7e85f7 solid 2px;
+  border: #7e85f7 solid 1px;
   border-radius: 15px;
   margin: 10px;
   width: 48%;
