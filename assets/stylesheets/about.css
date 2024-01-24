@@ -136,8 +136,7 @@ body.dark-mode {
   align-items: center;
 }
 
-.card1,
-.card2 {
+.card {
   border: #7e85f7 solid 1px;
   border-radius: 15px;
   margin: 10px;
@@ -146,6 +145,7 @@ body.dark-mode {
   padding: 20px;
   display: flex;
 }
+
 .digitek,
 .pandalivery {
   border-radius: 12px;
@@ -162,13 +162,18 @@ body.dark-mode {
   color: #d4d3d3;
 }
 
-.card1-content {
+.card-content {
   flex: 1;
 }
 
-@media (max-width: 768px) {
-  .card1 {
+@media (max-width: 600px) {
+  .card {
     width: 100%;
     font-size: 13px;
+  }
+  .digitek,
+  .pandalivery {
+    width: 50%;
+    height: 50%;
   }
 }
