@@ -86,17 +86,13 @@ body.dark-mode {
   color: #888888;
   font-size: 1.5vw;
 }
+
 .name {
-  font-size: 5vw;
+  font-size: 7vw;
 }
 
-@media screen and (max-width: 600px) {
-  .name {
-    font-size: 50px;
-  }
-  .desc {
-    font-size: 20px;
-  }
+.desc {
+  font-size: 3vw;
 }
 
 .cv-button {
@@ -119,7 +115,7 @@ body.dark-mode {
   transition: 0.3s ease;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .cv-button {
   width: 100%;
   max-width: 100px;

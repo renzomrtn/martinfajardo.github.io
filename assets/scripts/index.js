@@ -9,6 +9,6 @@ notification.style.display = "block";
 
 window.addEventListener('resize', function () {
     var image = document.getElementById('landscape-image');
-    var newSrc = window.innerWidth <= 700 ? 'assets/images/home/homeImg2.jpg' : 'assets/images/home/homeImg.jpg';
+    var newSrc = window.innerWidth <= 800 ? 'assets/images/home/homeImg2.jpg' : 'assets/images/home/homeImg.jpg';
     image.src = newSrc;
 });
