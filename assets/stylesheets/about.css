@@ -168,11 +168,11 @@ body.dark-mode {
 @media (max-width: 600px) {
   .card {
     width: 100%;
-    font-size: 13px;
+    font-size: 10px;
   }
   .digitek,
   .pandalivery {
-    width: 50%;
-    height: 50%;
+    width: 80px;
+    height: 80px;
   }
 }
