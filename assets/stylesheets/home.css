@@ -134,24 +134,3 @@ body.dark-mode {
   padding: 5px 10px;
   }
 }
-
-/* ============== campaign =============== */
-.banner {
-  padding: 2%;
-  background-color: #2b2828;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-
-.link-button {
-  height: auto;
-  width: 80px;
-  cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-}
