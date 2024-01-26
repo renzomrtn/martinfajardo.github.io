@@ -88,11 +88,20 @@ body.dark-mode {
 }
 
 .name {
-  font-size: 7vw;
+  font-size: 4vw;
 }
 
 .desc {
-  font-size: 3vw;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 800px) {
+  .name {
+    font-size: 7vw;
+  }
+  .desc {
+    font-size: 3.5vw;
+  }
 }
 
 .cv-button {
