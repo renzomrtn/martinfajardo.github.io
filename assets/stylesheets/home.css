@@ -67,16 +67,6 @@ body.dark-mode {
   height: auto;
 }
 
-.top img {
-  width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .image img {
-    content: url('assets/images/home/homeImg2.jpg');
-  }
-}
-
 /* ============== bot =============== */
 .bot {
   height:fit-content;

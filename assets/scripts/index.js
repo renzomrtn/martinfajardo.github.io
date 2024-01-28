@@ -12,6 +12,3 @@ window.addEventListener('resize', function () {
     var newSrc = window.innerWidth <= 1000 ? 'assets/images/home/homeImg2.jpg' : 'assets/images/home/homeImg.jpg';
     image.src = newSrc;
 });
-
-// Trigger the resize event initially to ensure the correct image is displayed on page load
-window.dispatchEvent(new Event('resize'));
