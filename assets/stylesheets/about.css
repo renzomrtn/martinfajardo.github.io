@@ -73,10 +73,7 @@ body.dark-mode {
   align-items: center;
 }
 
-.slide1,
-.slide2,
-.slide3,
-.slide4 {
+.slide {
   margin: 10px;
   width: 98%;
   height: 500px;
@@ -85,10 +82,7 @@ body.dark-mode {
   border-radius: 15px;
 }
 
-.slide1:hover,
-.slide2:hover,
-.slide3:hover,
-.slide4:hover {
+.slide:hover {
   border: #4e54c8 solid 1px;
   transition: 0.3s ease;
 }
@@ -97,16 +91,13 @@ body.dark-mode {
   text-align: center;
 }
 
-.slide1:hover,
-.slide2:hover,
-.slide3:hover,
-.slide4:hover {
+.slide:hover {
   .category {
     color: #4e54c8;}
 }
 
 @media (max-width: 768px) {
-  .slide1, .slide2, .slide3, .slide4 {
+  .slide1 {
     width: 100%; /* Set the width to 100% for smaller screens */
   }
 }
