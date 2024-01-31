@@ -40,12 +40,12 @@ body.dark-mode {
   transition: 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .socials {
-    gap: 15px;
+    gap: 10px;
   }
   .socials a {
-    font-size: 25px;
+    font-size: 50px;
   }
 }
 
@@ -54,7 +54,7 @@ body.dark-mode {
     gap: 5px;
   }
   .socials a {
-    font-size: small;
+    font-size: 30px;
   }
 }
 
