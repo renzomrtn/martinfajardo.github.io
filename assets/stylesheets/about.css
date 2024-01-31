@@ -100,7 +100,13 @@ body.dark-mode {
 
 @media (max-width: 768px) {
   .slide {
-    width: 100%; /* Set the width to 100% for smaller screens */
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    height: 700px;
   }
 }
 
