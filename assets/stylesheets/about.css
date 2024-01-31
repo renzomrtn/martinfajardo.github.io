@@ -20,6 +20,7 @@ body.dark-mode {
 /* ========================= container ========================== */
 .socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -45,7 +46,7 @@ body.dark-mode {
     gap: 10px;
   }
   .socials a {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 
@@ -63,6 +64,7 @@ body.dark-mode {
   padding: 100px;
   width: 100%;
   font-family: 'Poppins';
+  flex-wrap: wrap;
 }
 
 .container-inner {
@@ -97,7 +99,7 @@ body.dark-mode {
 }
 
 @media (max-width: 768px) {
-  .slide1 {
+  .slide {
     width: 100%; /* Set the width to 100% for smaller screens */
   }
 }
