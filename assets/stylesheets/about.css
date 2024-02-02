@@ -42,18 +42,12 @@ body.dark-mode {
 }
 
 @media screen and (max-width: 800px) {
-  .socials {
-    gap: 10px;
-  }
   .socials a {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .socials {
-    gap: 5px;
-  }
   .socials a {
     font-size: 30px;
   }
@@ -76,8 +70,9 @@ body.dark-mode {
 }
 
 .slide {
-  margin: 10px;
-  width: 98%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: auto;
   height: 500px;
   padding: 10px;
   border: #7e85f7 solid 1px;
