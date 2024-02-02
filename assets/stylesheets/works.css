@@ -117,6 +117,12 @@ hr.songs::after {
     width: 32%;
   }
 }
+@media (max-width: 1000px) {
+  .card2 {
+    width: 90px;
+  }
+}
+
 
 /* ========== MODAL ========== */
 .modal {
