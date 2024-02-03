@@ -106,6 +106,10 @@ hr.songs::after {
   margin: 10px;
 }
 
+.card3 {
+  margin: 20px;
+}
+
 @media (min-width: 768px) {
   .card {
     width: 48%;
