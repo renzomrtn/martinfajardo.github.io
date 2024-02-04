@@ -71,13 +71,14 @@ hr.songs::after {
   background-color: black;
 }
 
-.content, .content {
+.content {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
+  padding: 10px;
 }
 
 .content img {
@@ -107,7 +108,7 @@ hr.songs::after {
 }
 
 .card3 {
-  margin: 20px;
+  margin: 10px;
 }
 
 @media (min-width: 768px) {
