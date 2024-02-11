@@ -44,17 +44,17 @@ hr {
     margin-bottom: 20px;
   }
   
-  hr.developed::after {
+  hr.sites::after {
     transition: background-color 0.5s ease;
     background-color: #ffffff;
     color: #4e54c8;
     padding: 0 4px;
     position: relative;
     top: -13px;
-    content: 'Developed Projects';
+    content: 'Developed Websites';
   }
   
-  hr.created::after {
+  hr.pixels::after {
     transition: background-color 0.5s ease;
     background-color: #ffffff;
     color: #4e54c8;
@@ -63,7 +63,27 @@ hr {
     top: -13px;
     content: 'Pixel Arts';
   }
+
+  hr.games::after {
+    transition: background-color 0.5s ease;
+    background-color: #ffffff;
+    color: #4e54c8;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    content: 'Developed Games';
+  }
   
+  hr.apps::after {
+    transition: background-color 0.5s ease;
+    background-color: #ffffff;
+    color: #4e54c8;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    content: 'Developed Apps';
+  }
+
   hr.songs::after {
     transition: background-color 0.5s ease;
     background-color: #ffffff;
