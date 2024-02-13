@@ -37,6 +37,7 @@ button {
   text-align: center;
   border: #ffffff 2px solid;
   display: flex;
+  flex-wrap: wrap;
   padding: 15px;
 }
 
@@ -114,6 +115,7 @@ hr.songs::after {
 .card img {
   border: #4e54c8 1px solid;
   border-radius: 12px;
+  max-width: 100%
 }
 
 .card2 img {
@@ -137,19 +139,19 @@ hr.songs::after {
   margin: 10px;
 }
   
+  
 @media (min-width: 768px) {
   .card {
     width: 48%;
   }
 }
-  
+
 @media (min-width: 1200px) {
   .card {
     width: 32%;
   }
 }
-
- @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   .card2 {
     width: 90px;
   }
