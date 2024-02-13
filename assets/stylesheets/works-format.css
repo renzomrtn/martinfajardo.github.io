@@ -107,9 +107,18 @@ hr.songs::after {
 }
 
 .card {
-  border-radius: 12px;
   width: 100%;
   height: auto;
+}
+
+.card img {
+  border: #4e54c8 1px solid;
+  border-radius: 12px;
+}
+
+.card2 img {
+  border: #4e54c8 1px solid;
+  border-radius: 12px;
 }
 
 .card2:hover {
