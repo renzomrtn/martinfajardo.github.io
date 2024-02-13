@@ -31,7 +31,16 @@ button {
   padding: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
-  
+
+.content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: #ffffff 2px solid;
+  display: flex;
+  padding: 15px;
+}
+
 hr {
   margin: 0 auto; /* needed to keep the hr aligned */
   width: 90%;
