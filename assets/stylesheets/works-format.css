@@ -28,7 +28,7 @@ button {
   color: #181616;
   font-family: Verdana;
   transition: background-color 0.3s, color 0.3s;
-  margin: 50px;
+  margin: 30px 0 50px 30px;
 }
 
 button:hover {
