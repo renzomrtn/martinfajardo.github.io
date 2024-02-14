@@ -147,6 +147,7 @@ hr.songs::after {
   .card {
     width: 48%;
   }
+
 }
 
 @media (min-width: 1200px) {
@@ -157,6 +158,10 @@ hr.songs::after {
 @media (max-width: 1000px) {
   .card2 {
     width: 90px;
+  }
+  button {
+    width: 80px;
+    height: 40px;
   }
 }
 
