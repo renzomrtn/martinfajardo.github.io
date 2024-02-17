@@ -77,3 +77,47 @@ button:hover {
     width: calc(100% - 20px); /* Adjust this value according to your layout */
   }
 }
+
+/* ========== MODAL ========== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(180, 140, 255, 0.3);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+  
+.modal-content {
+  max-width: 25%;
+  max-height: 25%;
+  transition: transform 0.2s;
+  border: #4e54c8 1px solid;
+  box-shadow: 0 0 20px rgba(4, 211, 176, 0.8);
+}
+  
+.modal.show .modal-content {
+  transform: scale(3);
+}
+  
+@media screen and (min-width: 800px) {
+  .modal.show .modal-content {
+    transform: scale(2);
+  }
+}
+  
+@media screen and (max-width: 767px) and (min-width: 601px) {
+  .modal.show .modal-content {
+    transform: scale(1); 
+  }
+}
+  
+@media screen and (max-width: 600px) {
+  .modal.show .modal-content {
+    transform: scale(0.8);
+  }
+}
