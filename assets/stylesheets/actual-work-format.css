@@ -122,6 +122,6 @@ button:hover {
   
 @media screen and (max-width: 600px) {
   .modal.show .modal-content {
-    transform: scale(0.8);
+    transform: scale(3.5);
   }
 }
