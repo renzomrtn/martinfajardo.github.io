@@ -49,6 +49,50 @@ button:hover {
   justify-content: center;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.content img {
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+  border: #8f94fb 1px solid;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  margin: 0 auto; /* needed to keep the hr aligned */
+  width: 90%;
+  border: none;
+  border-top: 3px double #4e54c8;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+hr.pixels::after {
+  transition: background-color 0.5s ease;
+  background-color: #ffffff;
+  color: #4e54c8;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+  content: 'Pixel Arts';
+}
+
+.dark-mode hr::after {
+  background-color: black;
+}
+
 .card {
   margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
