@@ -105,7 +105,17 @@ hr.songs::after {
   top: -13px;
   content: 'Music Made';
 }
-  
+
+hr.captures::after {
+  transition: background-color 0.5s ease;
+  background-color: #ffffff;
+  color: #4e54c8;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+  content: 'My Captures';
+}
+
 .dark-mode hr::after {
   background-color: black;
 }
