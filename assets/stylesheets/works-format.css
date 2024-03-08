@@ -113,7 +113,7 @@ hr.captures::after {
   padding: 0 4px;
   position: relative;
   top: -13px;
-  content: 'My Captures';
+  content: 'My Captured Photos';
 }
 
 .dark-mode hr::after {
