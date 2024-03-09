@@ -24,6 +24,7 @@ body.dark-mode {
 
 .workcontents {
   align-items: center;
+  text-align: center;
 }
 
 .content {
@@ -34,6 +35,11 @@ body.dark-mode {
   margin-left: 5%;
   margin-right: 5%;
   padding: 10px;
+}
+
+.disclaimer {
+  margin: 5rem 3rem 5rem 3rem;
+  color: red;
 }
 
 .content img {
