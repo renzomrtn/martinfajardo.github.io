@@ -69,6 +69,7 @@ body.dark-mode {
   align-items: center;
 }
 
+
 .slide {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -82,15 +83,16 @@ body.dark-mode {
 .slide:hover {
   border: #4e54c8 solid 1px;
   transition: 0.3s ease;
+    .category {
+    color: #4e54c8;}
 }
 
 .category {
   text-align: center;
 }
 
-.slide:hover {
-  .category {
-    color: #4e54c8;}
+li:hover {
+  color:#8f94fb;
 }
 
 @media (max-width: 768px) {
