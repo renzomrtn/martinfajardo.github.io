@@ -61,14 +61,6 @@ body.dark-mode {
   flex-wrap: wrap;
 }
 
-.container-inner {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 /*
 .slide {
   margin-bottom: 10px;
