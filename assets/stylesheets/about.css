@@ -61,6 +61,27 @@ body.dark-mode {
   flex-wrap: wrap;
 }
 
+.middle-inner {
+  margin-top: 5rem;
+  text-align: center;
+  border: #1b00b3 solid 2px;
+}
+
+.category {
+  margin: 1rem 0 1rem 0;
+}
+
+.slide {
+  text-align: center;
+  display: flex;
+}
+
+.card {
+  margin: 1rem;
+  border: #00b3a1 solid 2px;
+  width: 20rem;
+}
+
 /*
 .slide {
   margin-bottom: 10px;
@@ -79,10 +100,6 @@ body.dark-mode {
     color: #4e54c8;}
 }
 */
-
-.category {
-  text-align: center;
-}
 
 li:hover {
   color:#8f94fb;
