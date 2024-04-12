@@ -64,7 +64,6 @@ body.dark-mode {
 .middle-inner {
   margin-top: 5rem;
   text-align: center;
-  border: #1b00b3 solid 2px;
 }
 
 .category {
@@ -72,14 +71,26 @@ body.dark-mode {
 }
 
 .slide {
+  justify-content: center;
+  align-items: center;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
   margin: 1rem;
-  border: #00b3a1 solid 2px;
   width: 20rem;
+}
+
+.anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pic {
+  width: 6rem;
 }
 
 /*
