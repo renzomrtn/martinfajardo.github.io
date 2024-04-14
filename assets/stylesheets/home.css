@@ -85,6 +85,8 @@ body.dark-mode {
 
 .name {
   font-size: 4vw;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .desc {
