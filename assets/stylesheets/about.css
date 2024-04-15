@@ -29,7 +29,7 @@ body.dark-mode {
 }
 
 .socials a {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-decoration: none;
   color: #8f94fb;
   transition: color 0.3s ease;
@@ -43,13 +43,13 @@ body.dark-mode {
 
 @media screen and (max-width: 800px) {
   .socials a {
-    font-size: 35px;
+    font-size: 2.188rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .socials a {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
