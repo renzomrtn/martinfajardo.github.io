@@ -53,7 +53,6 @@ body.dark-mode {
   }
 }
 
-/* ========================= container ========================== */
 .container {
   padding: 100px;
   width: 100%;
@@ -93,25 +92,6 @@ body.dark-mode {
 .pic {
   width: 6rem;
 }
-
-/*
-.slide {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: auto;
-  height: 500px;
-  padding: 10px;
-  border: #7e85f7 solid 1px;
-  border-radius: 15px;
-}
-
-.slide:hover {
-  border: #4e54c8 solid 1px;
-  transition: 0.3s ease;
-    .category {
-    color: #4e54c8;}
-}
-*/
 
 li:hover {
   color:#8f94fb;
