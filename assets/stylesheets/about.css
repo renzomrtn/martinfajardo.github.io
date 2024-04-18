@@ -76,6 +76,7 @@ body.dark-mode {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  font-size: 0.80rem;
 }
 
 .card {
