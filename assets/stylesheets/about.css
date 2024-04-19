@@ -96,6 +96,20 @@ body.dark-mode {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 2rem);
+    margin: .75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: calc(100% - 2rem);
+    margin: 0.25rem;
+  }
+}
+
 .anchor {
   display: flex;
   flex-direction: column;
