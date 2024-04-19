@@ -81,7 +81,9 @@ body.dark-mode {
 
 .card {
   margin: 1rem;
-  width: 20rem;
+  width: 12rem;
+  height: 6rem;
+  display: flex;
 }
 
 .anchor {
