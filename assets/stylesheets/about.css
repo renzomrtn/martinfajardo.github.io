@@ -84,6 +84,16 @@ body.dark-mode {
   width: 12rem;
   height: 6rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  margin: auto;
+}
+
+.card a {
+  text-align: center;
 }
 
 .anchor {
