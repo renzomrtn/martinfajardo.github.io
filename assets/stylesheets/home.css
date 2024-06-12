@@ -29,32 +29,6 @@ body.dark-mode {
   margin: 20px;
 }
 
-.notification {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #ff3333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  z-index: 1000;
-}
-
-.notification {
-  display: block; /* or display: inline-block; */
-  margin-bottom: 10px; /* adjust the margin as needed */
-}
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
 /* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
 /* ============== upper =============== */
 
