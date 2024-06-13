@@ -54,20 +54,16 @@ body.dark-mode {
 }
 
 .container {
-  padding: 100px;
+  padding: 1rem;
   width: 100%;
   font-family: 'Poppins';
   flex-wrap: wrap;
 }
 
-.middle-inner {
+.interests {
   margin-top: 5rem;
   margin-bottom: 5rem;
   text-align: center;
-}
-
-.category {
-  margin: 1rem 0 1rem 0;
 }
 
 .slide {
@@ -81,9 +77,10 @@ body.dark-mode {
 
 .card {
   margin: 1rem;
-  width: 12rem;
+  width: 10rem;
   height: 6rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -98,15 +95,17 @@ body.dark-mode {
 
 @media screen and (max-width: 768px) {
   .card {
-    width: calc(50% - 2rem);
+    width: 8rem;
     margin: .75rem;
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .card {
-    width: calc(100% - 2rem);
+    width: 7rem;
     margin: 0.25rem;
+    font-size: 9px;
   }
 }
 
