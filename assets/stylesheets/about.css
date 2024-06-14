@@ -18,6 +18,12 @@ body.dark-mode {
 
 /* =====================================================THIS IS THE ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
 /* ========================= container ========================== */
+.socmed {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 .socials {
   display: flex;
   flex-wrap: wrap;
@@ -60,10 +66,10 @@ body.dark-mode {
   flex-wrap: wrap;
 }
 
-.interests {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.interests,
+.socmed {
   text-align: center;
+  margin: 2.5rem 1rem 2.5rem 1rem;
 }
 
 .slide {
