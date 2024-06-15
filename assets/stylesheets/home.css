@@ -67,6 +67,13 @@ body.dark-mode {
   font-size: 1.5vw;
 }
 
+hr {
+  margin: auto;
+  border: 1px solid #4e54c8;
+  width: 32%;
+  text-decoration: none;
+}
+
 @media (max-width: 800px) {
   .name {
     font-size: 7vw;
