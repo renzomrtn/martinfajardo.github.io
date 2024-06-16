@@ -62,28 +62,6 @@ button:hover {
   height: auto;
 }
 
-hr {
-  margin: 0 auto; /* needed to keep the hr aligned */
-  width: 90%;
-  border: none;
-  border-top: 3px double #4e54c8;
-  overflow: visible;
-  text-align: center;
-  height: 5px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-hr.pixels::after {
-  transition: background-color 0.5s ease;
-  background-color: #000000;
-  color: #4e54c8;
-  padding: 0 4px;
-  position: relative;
-  top: -13px;
-  content: 'Pixel Arts';
-}
-
 .projectanatomy,
 .spaceevader,
 .taskmaster,
@@ -115,21 +93,6 @@ hr.pixels::after {
   height: auto;
 }
 
-.card2 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 100px;
-  height: auto;
-  margin: 10px;
-}
-
-.card2:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card2:not(.dark-mode):hover {
-  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
-}
 
 @media screen and (max-width: 768px) {
   .card {
