@@ -5,19 +5,9 @@
 }
 
 body {
-  transition: background-color 0.5s ease;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-family: 'Poppins';
-}
-
-body.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.dark-mode {
-  color: white;
 }
 
 .dark-mode

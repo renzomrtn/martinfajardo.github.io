@@ -35,15 +35,6 @@
   color: white;
 }
 
-.toggle {
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.dark-mode .toggle i {
-  color: #fff;
-}
-
 .logo {
   width: 40px;
   height: 40px;
