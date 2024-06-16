@@ -6,14 +6,9 @@
 
 body {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-family: 'Poppins';
-}
-
-body.dark-mode {
-  background-color: black;
-  color: white;
 }
 
 /*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
@@ -58,7 +53,7 @@ hr {
   
 hr.sites::after {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #4e54c8;
   padding: 0 4px;
   position: relative;
@@ -68,7 +63,7 @@ hr.sites::after {
   
 hr.pixels::after {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #4e54c8;
   padding: 0 4px;
   position: relative;
@@ -78,7 +73,7 @@ hr.pixels::after {
 
 hr.games::after {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #4e54c8;
   padding: 0 4px;
   position: relative;
@@ -88,7 +83,7 @@ hr.games::after {
   
 hr.apps::after {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #4e54c8;
   padding: 0 4px;
   position: relative;
@@ -98,7 +93,7 @@ hr.apps::after {
 
 hr.songs::after {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #4e54c8;
   padding: 0 4px;
   position: relative;
@@ -108,16 +103,12 @@ hr.songs::after {
 
 hr.captures::after {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #4e54c8;
   padding: 0 4px;
   position: relative;
   top: -13px;
   content: 'My Captured Photos';
-}
-
-.dark-mode hr::after {
-  background-color: black;
 }
 
 .card {

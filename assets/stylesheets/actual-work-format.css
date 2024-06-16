@@ -6,14 +6,9 @@
 
 body {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-family: 'Poppins';
-}
-
-body.dark-mode {
-  background-color: black;
-  color: white;
 }
 
 /*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
@@ -81,16 +76,12 @@ hr {
 
 hr.pixels::after {
   transition: background-color 0.5s ease;
-  background-color: #ffffff;
+  background-color: #000000;
   color: #4e54c8;
   padding: 0 4px;
   position: relative;
   top: -13px;
   content: 'Pixel Arts';
-}
-
-.dark-mode hr::after {
-  background-color: black;
 }
 
 .projectanatomy,
