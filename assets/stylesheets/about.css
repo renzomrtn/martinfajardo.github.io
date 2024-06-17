@@ -28,30 +28,34 @@ body {
   height: fit-content;
 }
 
-.socials a {
-  font-size: 2.5rem;
+.social-link {
+  width: 3.5rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
   text-decoration: none;
-  color: #8f94fb;
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.socials a:hover {
-  color: #00b3a1;
-  transform: scale(1.2);
-  transition: 0.3s ease;
+.social-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 800px) {
-  .socials a {
-    font-size: 2.188rem;
+  .social-link {
+    width: 2.5rem;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .socials a {
-    font-size: 1.875rem;
-  }
-}
 
 .container {
   padding: 1rem;
