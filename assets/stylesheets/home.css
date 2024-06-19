@@ -74,35 +74,12 @@ hr {
   }
 }
 
-.cv-button {
-  text-decoration: none;
-  height: 60px;
-  width: 170px;
-  border: #000000 1px solid;
-  border-radius: 1em;
-  background: linear-gradient(to left, #4e54c8, #8f94fb);;
-  color: #181616;
-  font-family: Verdana;
-  margin: 20px;
-  padding: 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.cv-button:hover {
-  background: linear-gradient(to bot, #5e64da, #9ea2f8);
-  transform: scale(1.03);
-  transition: 0.3s ease;
-}
-
-@media (max-width: 700px) {
-  .cv-button {
+/* ============== container =============== */
+.container {
+  padding: 1rem;
   width: 100%;
-  max-width: 100px;
-  height: 35px;
-  margin: 10px 0;
-  font-size: 9px;
-  padding: 5px 10px;
-  }
+  font-family: 'Poppins';
+  flex-wrap: wrap;
 }
 
 .socmed {
@@ -147,14 +124,6 @@ hr {
   .social-link {
     width: 2.5rem;
   }
-}
-
-
-.container {
-  padding: 1rem;
-  width: 100%;
-  font-family: 'Poppins';
-  flex-wrap: wrap;
 }
 
 .interests,
