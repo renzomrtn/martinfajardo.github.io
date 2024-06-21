@@ -67,16 +67,19 @@ hr {
 
 @media (max-width: 800px) {
   .name {
-    font-size: 7vw;
+    font-size: 10vw;
   }
   .desc {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
+  }
+  hr {
+    width: 70%;
   }
 }
 
 /* ============== container =============== */
 .container {
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100%;
   font-family: 'Poppins';
   flex-wrap: wrap;
