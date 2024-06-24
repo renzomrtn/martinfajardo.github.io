@@ -1,4 +1,4 @@
-                                           ## MY PORTFOLIO
+## MY PORTFOLIO
 
 # README
   This is my portfolio. A collection of the things I've worked on. Feel free to browse and find inspiration.
