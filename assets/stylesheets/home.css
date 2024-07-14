@@ -1,21 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
-  
+
 html, body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
-  
+
+html {
+  background: linear-gradient(41deg, rgba(41,41,42,1) 0%, rgba(0,0,0,1) 35%, rgba(2,32,38,1) 100%);
+}
+
 body {
-    background: linear-gradient(41deg, rgba(41,41,42,1) 0%, rgba(0,0,0,1) 35%, rgba(2,32,38,1) 100%);
-    color: #d4d3d3;
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  color: #d4d3d3;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: inherit;
 }
 
 /* ===================================================== ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
@@ -30,6 +33,7 @@ body {
 
 /* ============================ left ============================ */
 .left {
+    flex: 1;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -166,19 +170,31 @@ body {
 /* ========== MEDIA QUERIES ========== */
 
 @media (max-width: 800px) {
+  .everything {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  #landscape-image {
+    width: 20rem;
+    height: auto;
+  }
+  .social-link {
+    width: 1.5rem;
+  }
   .name {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   .desc {
     font-size: 4.5vw;
   }
+  .desc2 {
+    font-size: 4vw;
+  }
   hr {
     width: 70%;
   }
-}
-
-@media screen and (max-width: 800px) {
-    .social-link {
-      width: 2.5rem;
-    }
 }
