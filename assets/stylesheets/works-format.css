@@ -195,7 +195,10 @@ audio {
   padding: 0.5rem;
 }
 
-  
+.disclaimer {
+  margin: 15rem 3rem 3rem 3rem;
+  color: red;
+}
   
 @media (min-width: 768px) {
   .card {
