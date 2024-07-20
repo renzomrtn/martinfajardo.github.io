@@ -56,12 +56,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-  
-.desc {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #5402a1;
-  font-size: 1.5vw;
-}
 
 /* ============================ right ============================ */
 .right {
@@ -165,9 +159,8 @@ body {
 
 /* ========== MEDIA QUERIES ========== */
 @media (max-width: 800px) {
-  html,
   body {
-    height: auto;
+    height:fit-content;
   }  
   .everything {
     flex-direction: column;
@@ -181,6 +174,9 @@ body {
     width: 100%;
     height: auto;
   }
+  .divider {
+    margin-bottom: 0px;
+  }
   .social-link {
     width: 1.5rem;
   }
@@ -189,9 +185,6 @@ body {
   }
   .desc {
     font-size: 3.5vw;
-  }
-  .desc2 {
-    font-size: 3vw;
   }
   hr {
     width: 70%;
