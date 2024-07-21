@@ -196,15 +196,16 @@ audio {
 }
 
 .disclaimer {
-  margin: 15rem 3rem 3rem 3rem;
-  color: red;
+  font-size: small;
+  text-align: center;
+  background-color: red;
+  color: rgb(255, 255, 255);
 }
   
 @media (min-width: 768px) {
   .card {
     width: 48%;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -212,6 +213,7 @@ audio {
     width: 32%;
   }
 }
+
 @media (max-width: 1000px) {
   .card2 {
     width: 90px;
@@ -219,6 +221,11 @@ audio {
   button {
     width: 80px;
     height: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .disclaimer {
+    font-size: 12px;
   }
 }
 
