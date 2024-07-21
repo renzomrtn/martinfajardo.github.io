@@ -41,6 +41,7 @@ body {
 #landscape-image {
   width: 40rem;
   height: auto;
+  border-radius: 12px;
 }
 
 /* ================== top ================== */
