@@ -1,0 +1,234 @@
+@media (min-width: 1000px) {
+    body {
+        height: fit-content;
+    }
+
+    .everything {
+        flex-wrap: nowrap;
+        height: fit-content;
+    }
+
+    .left,
+    .right {
+        padding: 1rem;
+        border: 1px solid red;
+    }
+
+    #map {
+        width: 35rem;
+    }
+
+    #landscape-image {
+        width: 5rem;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro p {
+        font-size: small;
+        text-align: justify;
+    }
+
+    .introintro {
+        margin: 0.5rem;
+    }
+
+    .recent {
+        width: 100%;
+    }
+
+    .crd-img {
+        width: 10rem;
+    }
+
+    .socials {
+        justify-content: left;
+        padding: 0;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .card {
+        width: 12rem;
+    }
+
+    .group {
+        margin: 0.5rem;
+    }
+
+    .group p {
+        font-size: small;
+    }
+
+    .techimg {
+        width: 2rem;
+    }
+
+    .tech,
+    .experience {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        height: fit-content;
+    }
+
+    .everything {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: fit-content;
+    }
+
+    .left,
+    .right {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    #map {
+        width: 20rem;
+    }
+
+    #landscape-image {
+        width: 5rem;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro p {
+        font-size: small;
+        text-align: justify;
+    }
+
+    .introintro {
+        margin: 0.5rem;
+    }
+
+    .socials {
+        justify-content: left;
+        padding: 0;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .tech {
+        display: flex;
+    }
+
+    .group {
+        margin: 0.5rem;
+    }
+
+    .group p {
+        font-size: small;
+    }
+
+    .techimg {
+        width: 2rem;
+    }
+
+    .tech,
+    .experience {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    html, body {
+        overflow-x: hidden;
+    }
+      
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .everything {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: fit-content;
+    }
+
+    .left,
+    .right {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    #map {
+        width: 25rem;
+    }
+
+    #landscape-image {
+        width: 5rem;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro p {
+        font-size: small;
+        text-align: justify;
+    }
+
+    .introintro {
+        margin: 0.5rem;
+    }
+
+    .socials {
+        justify-content: left;
+        padding: 0;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .tech {
+        display: flex;
+    }
+
+    .group {
+        margin: 0.5rem;
+    }
+
+    .group p {
+        font-size: small;
+    }
+
+    .techimg {
+        width: 2rem;
+    }
+
+    .intro, .bottom, .tech,
+    .experience {
+        width: 100%;
+    }
+}
