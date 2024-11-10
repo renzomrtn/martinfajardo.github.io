@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <title>Martin Fajardo</title>
-  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/stylesheets/home.css">
-  <!-- COMPONENTS -->
-  <link rel="stylesheet" href="components/scrollbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Martin Fajardo</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="assets/stylesheets/home.css">
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="components/scrollbar.css">
 </head>
 
 <body>
+    <nav>
+        <div class="inner-nav">
+            <div class="links">
+                <a class="anchors" href="#blog">Blog</a>
+                <a class="anchors" href="">Certifications</a>
+                <a class="anchors" href="">Codes</a>
+                <a class="anchors" href="">Contact</a>
+                <a class="anchors" href="#donate">Donate</a>
+            </div>
+        </div>
+    </nav>
     <div class="everything">
         <div class="left">
-            <div class="image">
-                <img id="landscape-image" src="assets/images/home/me.jpg">
+            <div id="map"></div>
+            <div class="intro">
+                <div class="image">
+                    <img id="landscape-image" src="assets/images/home/me2.jpg">
+                </div>
+                <div class="introintro">
+                    <div class="nameholder">
+                        <h1 class="name">I'm Martin</h1>
+                        <!-- <div class="divider"></div> -->
+                    </div>
+                    <div class="hello">
+                        <p class="desc">Technophile BSIT Student. I just like doing stuff that comes into my mind.</p>
+                    </div>
+                    <br>
+                    <div class="socials">
+                        <a href="https://github.com/renzomrtn" target="_blank" class="social-link">
+                            <img src="assets/images/about/0.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/martin-lorenz-fajardo-679108277/" target="_blank" class="social-link">
+                            <img src="assets/images/about/2.png">
+                        </a>
+                        <a href="https://martinlorenzfajardo.wordpress.com/" target="_blank" class="social-link">
+                            <img src="assets/images/about/3.png">
+                        </a>
+                        <a href="https://facebook.com/renzomrtn" target="_blank" class="social-link">
+                            <img src="assets/images/about/4.png">
+                        </a>
+                        <a href="https://instagram.com/renzomrtn" target="_blank" class="social-link">
+                            <img src="assets/images/about/5.png">
+                        </a>
+                        <a href="https://x.com/renzomrtn" target="_blank" class="social-link">
+                            <img src="assets/images/about/6.png">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="hello">
-                <p class="desc">Technophile BSIT Student. I just like doing stuff that comes into my mind.</p>
+            <div class="bottom">
+                <div class="recent">
+                    <h3>Recent Projects</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <img>
+                            <h5>Barangay Website</h5>
+                            <p>Town website as part of my college curriculum.</p>
+                        </div>
+                        <div class="card">
+                            <img>
+                            <h5>Flixplus</h5>
+                            <p>Website about movies</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/home/prjcrtntmy.png" class="crd-img">
+                            <h5>Project Anatomy</h5>
+                            <p>Health Web game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog" id="blog">
+                    <h3>Blog</h3>
+                    <h5>Why coding excercises don't work</h5>
+                </div>
+                <div class="donate" id="donate">
+                    <h3>Donate</h3>
+                    <a href="https://www.buymeacoffee.com/renzomrtn" target="_blank" class="social-link">
+                        <img src="assets/images/about/1.png">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="right">
-            <div class="nameholder">
-                <h1 class="name">I'm Martin</h1>
-                <div class="divider"></div>
-            </div>
+            <h3>My Works</h3>
             <div class="worksfolder">
                 <a class="work" href="works/games.html">Games</a>
                 <a class="work" href="works/websites.html">Websites</a>
@@ -35,37 +108,56 @@
                 <a class="work" href="works/musics.html">Music</a>
                 <a class="work" href="works/captures.html">Captures</a>
             </div>
-            <div class="socmed">
-                <div class="socials">
-                    <a href="https://github.com/renzomrtn" target="_blank" class="social-link">
-                        <img src="assets/images/about/0.png">
-                    </a>
-                    <a href="https://www.buymeacoffee.com/renzomrtn" target="_blank" class="social-link">
-                        <img src="assets/images/about/1.png">
-                    </a>
-                    <a href="https://www.linkedin.com/in/martin-lorenz-fajardo-679108277/" target="_blank" class="social-link">
-                        <img src="assets/images/about/2.png">
-                    </a>
-                    <a href="https://martinlorenzfajardo.wordpress.com/" target="_blank" class="social-link">
-                        <img src="assets/images/about/3.png">
-                    </a>
-                    <a href="https://facebook.com/renzomrtn" target="_blank" class="social-link">
-                        <img src="assets/images/about/4.png">
-                    </a>
-                    <a href="https://instagram.com/renzomrtn" target="_blank" class="social-link">
-                        <img src="assets/images/about/5.png">
-                    </a>
-                    <a href="https://x.com/renzomrtn" target="_blank" class="social-link">
-                        <img src="assets/images/about/6.png">
-                    </a>
+            <br>
+            <h3>Tech Stack</h3>
+            <div class="tech">
+                <div class="group">
+                    <img src="assets/images/home/html.png" class="techimg">
+                    <p>HTML 5</p>
+                </div>
+                <div class="group">
+                    <img src="assets/images/home/css.png" class="techimg">
+                    <p>CSS 3</p>
+                </div>
+                <div class="group">
+                    <img src="assets/images/home/bootstrap.png" class="techimg">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="group">
+                    <img src="assets/images/home/react.png" class="techimg">
+                    <p>React.js</p>
+                </div>
+                <div class="group">
+                    <img src="assets/images/home/java.png" class="techimg">
+                    <p>Java</p>
+                </div>
+            </div>
+            <br>
+            <h3>Work</h3>
+            <div class="experience">
+                <div class="work-card">
+                    <img src="assets/images/home/digitek.png" class="work-img">
+                    <div class="texts">
+                        <p>2019 - Present</p>
+                        <h4>Digitek Digital Photo Services</h4>
+                        <p>Editor</p>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <img src="assets/images/home/pandalivery.png" class="work-img">
+                    <div class="texts">
+                        <p>2023</p>
+                        <h4>Pandalivery</h4>
+                        <p>Intern</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <script src="assets/scripts/index.js">
-    </script>
-  
+    <script src="assets/scripts/index.js"></script>
+
 </body>
+
 </html>

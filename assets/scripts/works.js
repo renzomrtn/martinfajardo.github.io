@@ -14,3 +14,7 @@ function openModal(img) {
   modal.classList.add("show"); // Add the "show" class to activate the transition
   modalImg.src = img.src;
 }
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+}, false);
