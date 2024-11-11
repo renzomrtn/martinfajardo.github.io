@@ -208,30 +208,45 @@ h3 {
   margin-bottom: 3rem;
 }
 
+.blog a {
+  color: #d4d3d3;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.blog a:hover {
+  color: #fcfcfc;
+}
+
 /* ============================ right ============================ */
 .right {
   padding: 2rem 10rem 2rem 1rem;
   width: 40%;
 }
 
+.worksfolder, .tech, .experience {
+  margin-bottom: 1rem;
+}
+
 .worksfolder {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .work {
+  width: fit-content;
   color: #adadad;
   position: relative;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 1rem;
 }
 
 .work::before {
   content: '';
   position: absolute;
-  width: 20%;
+  width: 100%;
   height: 4px;
   border-radius: 4px;
   background-color: #fcfcfc;
