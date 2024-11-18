@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  transition: background-color 0.5s ease;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Poppins';
+}
+
+/*===========================================THIS IS THE CONTENT FOR THE ENTIRE PAGE===========================================*/
+
+button {
+  text-decoration: none;
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to left, #4e54c8, #8f94fb);;
+  color: #181616;
+  font-family: Verdana;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 30px 0 50px 30px;
+  font-size: 12px;
+}
+  
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1000px) {
+  button {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.content img {
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+  border: #8f94fb 1px solid;
+  max-width: 100%;
+  height: auto;
+}
+
+.projectanatomy,
+.spaceevader,
+.taskmaster,
+.flixplus,
+.gsites,
+.rentables,
+.digitek {
+  margin: 30px;
+}
+
+.card {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: calc(33.33% - 20px); /* Adjust this value according to your layout */
+  max-width: 300px; /* Adjust this value according to your layout */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:not(.dark-mode):hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Adjust this value according to your layout */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px); /* Adjust this value according to your layout */
+  }
+}
+
+/* ========== MODAL ========== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(180, 140, 255, 0.3);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+  
+.modal-content {
+  max-width: 25%;
+  max-height: 25%;
+  transition: transform 0.2s;
+  border: #4e54c8 1px solid;
+  box-shadow: 0 0 20px rgba(4, 211, 176, 0.8);
+}
+  
+.modal.show .modal-content {
+  transform: scale(3);
+}
+  
+@media screen and (min-width: 800px) {
+  .modal.show .modal-content {
+    transform: scale(2);
+  }
+}
+  
+@media screen and (max-width: 767px) and (min-width: 601px) {
+  .modal.show .modal-content {
+    transform: scale(1); 
+  }
+}
+  
+@media screen and (max-width: 600px) {
+  .modal.show .modal-content {
+    transform: scale(3.5);
+  }
+}

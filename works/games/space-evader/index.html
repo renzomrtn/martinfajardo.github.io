@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Evader</title>
+    <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="../../actual-work-format.css">
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="../../components/scrollbar.css">
+  </head>
+  <body>
+    <div class="button">
+      <a href="../../games/">
+        <button class="button">Go back</button>
+      </a>
+    </div>
+    <div class="spaceevader">
+      <div class="row">
+        <div class="card">
+          <img src="se-1.png" alt="homescreen1" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="card">
+          <img src="se-2.png" alt="homescreen2" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="card">
+          <img src="se-3.png" alt="categories" onclick="openModal(this)" style="width:100%">
+        </div>
+        <div class="card">
+          <img src="se-4.png" alt="review" onclick="openModal(this)" style="width:100%">
+        </div>
+      </div>
+      <div class="text2">
+        <h3>Game Development: "Space Evader"</h3>
+          <p>
+            Space Evader is an individual activity for the subject Introduction to Computing.
+          </p>
+          <br>
+          <p><b>When: </b>2023</p>
+          <p><b>Method: </b>Scratch</p>
+          <p><b>Role: </b>Author</p>
+          <br>
+          <p>
+            The goal was to make a sprite fly. I thought that most of the students will do the most basic thing- and since I already got experience with Construct 3, why not experiment with the instructions and
+            make a rocket? It also "flies". Aside from flight, the sprite should also be able to collect points so I did- by using mini stars instead of coins. The game should also have clouds, well there are
+            no clouds in space so I used rocks that will reduce the ship's health if both collided. Also, The sprite should be able to change color so I thought of changing its color to red whenever it collides
+            with a rock. Easy.
+          </p>
+          <br>
+          <p>Want to try the game? <a href="https://scratch.mit.edu/projects/930216920" target="_blank">Click This Link</a></p>
+      </div>
+    </div>
+
+    <!-- The modal -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Javascript -->
+    <script src="../../../assets/scripts/works.js"></script>
+    <script src="../../assets/scripts/dark-mode.js"></script>
+  </body>
+</html>
