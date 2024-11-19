@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  background: linear-gradient(41deg, rgba(0,0,0,1) 35%, rgba(2,32,38,1) 100%);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgb(44, 40, 61) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(44, 40, 61) 1px, transparent 1px);
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.active-butt {
+    color: #fff;
+    background-color: rgb(121, 120, 120);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.content {
+    height: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    height: 2rem;
+    color: #ffffff;
+    background-color: rgb(26, 142, 219);
+    width: 100%;
+}
+.links {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-link {
+    width: 80%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 0.5rem; /* Optional: Add space between <i> and <h4> */
+}
+i {
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+    font-size: 1.2rem; /* Adjust icon size if necessary */
+}
+  
+h4 {
+    width: fit-content;
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+    line-height: 1; /* Ensure consistent line height */
+}
+.right-link {
+    width: 20%;
+    display: flex; /* Flexbox layout */
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: center; /* Center items vertically */
+    gap: 0.5rem; /* Add space between buttons */
+    padding-right: 0.5rem; /* Add spacing between buttons and the right edge */
+}
+.minimize, .maximize, .exit{
+    width: 1.5rem; /* Set uniform width */
+    height: 1.5rem; /* Set uniform height */
+    display: flex; /* Ensure content is centered inside the button */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000; /* Optional: Add border for clarity */
+    color: #000;
+    background-color: #fff; /* Optional: Button background color */
+    font-size: 1rem; /* Set consistent font size */
+}
+.minimize:hover, .maximize:hover {
+    background-color: #d1cdcd;
+}
+.exit:hover {
+    background-color: red;
+}
+
+.head-bot {
+    padding: 5px;
+}
+
+.head-bot {
+    background-color: #dcdcdc;
+    padding: 5px 5px 5px 7px;
+    width: 100%;
+    color: #000;
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    gap: 1rem;
+}
+
+.platform {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.platform img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}

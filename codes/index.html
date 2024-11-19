@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Martin Fajardo - Codes</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="codes.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="head">
+            <div class="links">
+                <div class="left-link">
+                    <i class="fa-solid fa-file"></i>
+                    <h4>Codes - Notepad</h4>
+                </div>
+                <div class="right-link">
+                    <a class="minimize"> 🗕 </a>
+                    <a class="maximize"> 🗖 </a>
+                    <a class="exit" href="index.html"> ✖ </a>
+                </div>
+            </div>
+        </div>
+        <div class="head-bot">
+            <h1>Things you typically forget how:</h1>
+            <button class="active-butt">HTML / CSS</button>
+            <button onclick="message()">Javascript</button>
+            <button onclick="message()">Java</button>
+        </div>
+        <div class="leftnright">
+            <div class="left">
+                <a data-target="center-div">How to center a Div</a>
+                <a data-target="add-gaps">How to add gaps between items</a>
+                <a data-target="vertical-space">How to set vertical space between list items</a>
+                <a data-target="code-alignment">How to fix code alignment in VSCode</a>
+                <a data-target="remove-bullets">How to remove bullets in list</a>
+                <a data-target="align-anchors">How to align anchors vertically</a>
+                <a data-target="penis-enlargement">Best way to have a bigger penis</a>
+                <a data-target="justify-align">Differences between justify-content and align-items.</a>
+            </div>
+            <div class="right">
+                <div id="center-div" class="snippet">/* CSS: text-align + margin */</div>
+                <div id="add-gaps" class="snippet">
+                    <h3>Just add gap in the element's parent div</h3>
+                    <p>Instead of adding a margin in the specific item / element</p>
+                    <p class="code">
+                        .div {
+                            display: flex;
+                            gap: 0.5rem;
+                        }
+                    </p>
+                </div>
+                <div id="vertical-space" class="snippet">/* CSS: margin for spacing */</div>
+                <div id="code-alignment" class="snippet">
+                    <h3>Format the entire file:</h3>
+                    <p>Use the keyboard shortcut Ctrl+Shift+I (Command+Shift+I on macOS)</p><br>
+                    <h3>Format the selected text:</h3>
+                    <p>Use the keyboard shortcut Ctrl+K Ctrl+F</p>
+                </div>
+                <div id="remove-bullets" class="snippet">/* CSS: list-style: none */</div>
+                <div id="align-anchors" class="snippet">/* CSS: flex + align-items */</div>
+                <div id="penis-enlargement" class="snippet"><img src="joke1.jpg"><img src="joke2.jpg"></div>
+                <div id="justify-align" class="snippet"></div>
+            </div>
+        </div>
+    </div>
+    <!--<p>why are anchors side by side in html</p>-->
+    <!--<p>the easiest way to remove .html in your site's url</p>-->
+    <script src="codes.js"></script>
+
+</body>
+
+</html>
