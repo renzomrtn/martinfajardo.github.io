@@ -192,9 +192,6 @@ h3 {
 .cards {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
 }
 
 .cards p {
@@ -207,7 +204,6 @@ h3 {
   border: 1px solid grey;
   border-radius: 12px;
   padding: 1rem;
-  box-sizing: border-box; /* Ensures padding doesn't add to the width */
   background-color: rgb(0, 0, 0);
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
@@ -223,7 +219,7 @@ h3 {
   border-radius: 8px;
 }
 
-.recent, .blog, .donate {
+.recent, .blog{
   width: 50rem;
   margin-bottom: 3rem;
 }
