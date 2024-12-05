@@ -15,7 +15,7 @@ document.querySelector('.name').addEventListener('mouseover', function() {
     hoverText.textContent = originalText; // Reset text to original when mouse leaves
   });
 });
-
+/*
 // Set zoomControl to false to hide zoom controls
 var map = L.map('map', {
   center: [13.624962, 123.182401],
@@ -36,3 +36,4 @@ L.marker([13.624962, 123.182401]).addTo(map)
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 }, false);
+*/
