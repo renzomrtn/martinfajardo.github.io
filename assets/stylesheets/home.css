@@ -122,11 +122,11 @@ body a {
   body {
     padding: 0;
     margin: 0;
-    background-image: url("../images/home/bg-scroll2.png");
+    background-image: url("../images/home/Frame 1.png");
   }
 
   .everything {
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
   }
 
   .me {
@@ -142,7 +142,7 @@ body a {
   }
 
   .social-link {
-    width: 1rem;
+    width: 1.25rem;
   }
 
   .card-links {
@@ -150,11 +150,11 @@ body a {
   }
 
   .card {
-    width: 6.5rem;
-    height: 1.5rem;
+    width: 12rem;
+    height: 3rem;
   }
 
   .anchors {
-    font-size: 9px;
+    font-size: 14px;
   }
 }
