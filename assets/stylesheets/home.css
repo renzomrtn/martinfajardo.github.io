@@ -118,6 +118,47 @@ body a {
 
 
 /*========================================= MEDIA QUERY =========================================*/
+@media (max-width: 850px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/home/Frame 2.png");
+  }
+
+  .everything {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+
+  .me {
+    margin-bottom: 5rem;
+  }
+
+  .me-img {
+    width: 10rem;
+  }
+
+  .socials {
+    width: fit-content;
+  }
+
+  .social-link {
+    width: 1.50rem;
+  }
+
+  .card-links {
+    gap: 10px;
+  }
+
+  .card {
+    width: 15rem;
+    height: 3.5rem;
+  }
+
+  .anchors {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 500px) {
   body {
     padding: 0;
