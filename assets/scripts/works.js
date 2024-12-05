@@ -15,6 +15,17 @@ function openModal(img) {
   modalImg.src = img.src;
 }
 
+
+// anti right click
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 }, false);
+
+/* anti crtl shift i
+document.addEventListener('keydown', function(e) {
+  // Check if the keys Ctrl, Shift, and I are pressed simultaneously
+  if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') {
+    e.preventDefault(); // Prevent the default action (opening dev tools)
+    alert('Nuh uh!\nMerry Christmas Biatch!!');
+  }
+}); */

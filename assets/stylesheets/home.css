@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body, html {
+
+body,
+html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -14,9 +17,10 @@ body, html {
 body {
   background-image: url("../images/home/bg-scroll.png");
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size: cover;
   color: #d4d3d3;
   font-family: 'Poppins', sans-serif;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -28,12 +32,11 @@ body a {
 
 /* ===================================================== ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
 .everything {
+  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
   padding: 20rem 5rem 5rem 5rem;
 }
 
@@ -55,6 +58,10 @@ body a {
   margin-bottom: 5px;
 }
 
+.desc, .specialty  {
+  text-align: center;
+}
+
 .socials {
   width: 20rem;
   display: flex;
@@ -71,7 +78,7 @@ body a {
   overflow: hidden;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-  
+
 .social-link img {
   width: 100%;
   height: 100%;
@@ -79,7 +86,10 @@ body a {
 }
 
 .card-links {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   flex-direction: column;
 }
@@ -87,26 +97,64 @@ body a {
 .card {
   width: 22rem;
   height: 8rem;
-  border: 1px solid rgb(223, 223, 223);
+  border: 1px solid white;
+  background-color: rgba(138, 138, 138, 0.5);
   border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  position: relative; /* Enable relative positioning for child elements */
-  overflow: hidden; /* Ensure content stays within the card */
+  position: relative;
+  /* Enable relative positioning for child elements */
+  overflow: hidden;
+  /* Ensure content stays within the card */
 }
 
 .anchors {
-  color: white; /* Adjust text color */
-  text-decoration: none; /* Remove underline */
-  display: block; /* Make the anchor a block element */
-  position: absolute; /* Position it to cover the entire card */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex; /* Align text inside the anchor */
-  align-items: center;
-  justify-content: center;
+  color: white;
+}
+
+
+
+
+/*========================================= MEDIA QUERY =========================================*/
+@media (max-width: 500px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/home/bg-scroll2.png");
+  }
+
+  .everything {
+    padding: 1rem;
+  }
+
+  .me {
+    margin-bottom: 3rem;
+  }
+
+  .me-img {
+    width: 5rem;
+  }
+
+  .socials {
+    width: fit-content;
+  }
+
+  .social-link {
+    width: 1rem;
+  }
+
+  .card-links {
+    gap: 10px;
+  }
+
+  .card {
+    width: 6.5rem;
+    height: 1.5rem;
+  }
+
+  .anchors {
+    font-size: 9px;
+  }
 }
