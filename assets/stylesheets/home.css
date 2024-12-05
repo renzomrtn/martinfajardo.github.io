@@ -2,22 +2,21 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-html, body {
-  background: linear-gradient(41deg, rgba(0,0,0,1) 35%, rgba(2,32,38,1) 100%);
+body, html {
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
 body {
-  background-size: 40px 40px;
-  background-image:
-    linear-gradient(to right, rgb(44, 40, 61) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(44, 40, 61) 1px, transparent 1px);
+  background-image: url("../images/home/bg-scroll.png");
+  background-repeat: no-repeat;
+  background-size:auto;
   color: #d4d3d3;
   font-family: 'Poppins', sans-serif;
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -27,148 +26,44 @@ body a {
   text-decoration: none;
 }
 
-nav {
-  margin: 1rem;
-  justify-content: center;
-  display: flex;
-}
-
-.inner-nav {
-  display: flex;
-  width: 35rem;
-  height: 3.5rem;
-  border: #ffffff 1px solid;
-  border-radius: 40px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-}
-
-.inner-nav a:not(:first-child) {
-  margin-left: 2rem; /* Adds margin to every link except the first one */
-}
-
-.anchors:hover {
-  color: #ffffff;
-}
-
 /* ===================================================== ENTIRE CONTENT FOR THE ENTIRE PAGE===================================================== */
 .everything {
   justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
+  padding: 20rem 5rem 5rem 5rem;
 }
 
-/* ================== overall ================== */
-h3 {
-  margin-bottom: 1rem;
-  color: #a0a0a0;
-  display: inline-block;
-  background-color: #262626;
-  padding: 1px 5px 1px 5px;
-  border-radius: 8px;
-}
-
-/* ============================ left ============================ */
-.left {
-  padding: 2rem 10rem 2rem 10rem;
-  width: 60%;
+.me {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-/*
-.map-container {
-  position: relative;
   width: 100%;
-  height: 100%;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Fade only at the bottom 
-  mask-size: 100% 100%; /* Ensure it covers the whole map 
-}
-*/
-#map { 
-  height: 20rem; 
-  width: 50rem;
-  border: #ffffff 1px solid;
-  border-radius: 12px;
-  margin-bottom: 2rem;
+  margin-bottom: 50rem;
 }
 
-/*
-.leaflet-control-attribution {
-  display: none !important;
-}*/
-
-.intro {
-  display: flex;
-  width: 50rem;
-  margin-bottom: 2rem;
-}
-
-#landscape-image {
+.me-img {
   width: 10rem;
-  height: auto;
-  border: #ffffff 2px solid;
-  padding: 5px;
-  border-radius: 100px;
+  /* border-radius: 60%; */
 }
 
-/* ================== top ================== */
-.image {
-  text-align: center;
-}
-
-.intro {
-  align-items: center
-}
-
-.introintro {
-  margin: 1rem 1rem 1rem 2rem;
-}
-
-.name:hover {
-  color: #ffffff;
-}
-
-.hello {
-  height:fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.scope {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-}
-
-.s {
-  font-size: small;
-  padding: 5px;
-  background-color: #535353;
-  border-radius: 8px;
+.desc {
+  color: #8d8d8d;
+  margin-bottom: 5px;
 }
 
 .socials {
-  margin-top: 10px;
+  width: 20rem;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-  padding: 10px 10px 10px 0px;
-  height: fit-content;
+  gap: 10px;
+  justify-content: center;
 }
-  
+
 .social-link {
-  width: 1.5rem;
+  width: 2rem;
   height: auto;
   display: flex;
   justify-content: center;
@@ -182,137 +77,36 @@ h3 {
   height: 100%;
   object-fit: cover;
 }
-  
-.social-link:hover {
-  transform: scale(1.1);
-}
 
-/* ================== bottom ================== */
-
-.cards {
+.card-links {
   display: flex;
   gap: 1rem;
-}
-
-.cards p {
-  font-size: 12px;
+  flex-direction: column;
 }
 
 .card {
-  width: 15rem;
-  height: 12rem;
-  border: 1px solid grey;
-  border-radius: 12px;
-  padding: 1rem;
-  background-color: rgb(0, 0, 0);
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
-}
-
-.crd-img {
-  width: 13rem;
-  border-radius: 8px;
-}
-
-.recent, .blog{
-  width: 50rem;
-  margin-bottom: 3rem;
-}
-
-.blog a {
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.blog a:hover {
-  color: #fcfcfc;
-}
-
-/* ============================ right ============================ */
-.right {
-  padding: 2rem 10rem 2rem 1rem;
-  width: 40%;
-}
-
-.worksfolder, .tech, .experience {
-  margin-bottom: 1rem;
-}
-
-.worksfolder {
+  width: 22rem;
+  height: 8rem;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 40px;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  position: relative; /* Enable relative positioning for child elements */
+  overflow: hidden; /* Ensure content stays within the card */
 }
 
-.work {
-  width: fit-content;
-  color: #adadad;
-  position: relative;
-  display: inline-block;
-}
-
-.work::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: #fcfcfc;
-  bottom: 0;
+.anchors {
+  color: white; /* Adjust text color */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the anchor a block element */
+  position: absolute; /* Position it to cover the entire card */
+  top: 0;
   left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-}
-
-.work:hover {
-  color: #ffffff;
-}
-
-.work:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
-
-.tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.group {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Align text inside the anchor */
   align-items: center;
-  width: 6rem;
-  transition: transform 0.3s ease;
-}
-
-.group:hover {
-  transform: scale(1.05);
-}
-
-.techimg {
-  width: 3rem;
-}
-
-.experience p {
-  font-size: 13px;
-}
-
-.work-card {
-  display: flex;
-  border-radius: 8px;
-  gap: 10px;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-.work-img {
-  width: 5rem;
+  justify-content: center;
 }

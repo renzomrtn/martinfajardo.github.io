@@ -1,3 +1,6 @@
+<!-- IF YOU'RE READING THIS, THAT MEANS YOU'RE GAY. YOU NEED HELP -->
+
+
 <!DOCTYPE html>
 <html>
 
@@ -7,170 +10,73 @@
     <title>Martin Fajardo</title>
     <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="assets/stylesheets/home.css">
+    <link rel="stylesheet" href="sample.css">
     <link rel="stylesheet" href="assets/stylesheets/responsiveness.css">
     <!-- COMPONENTS -->
     <link rel="stylesheet" href="components/scrollbar.css">
 </head>
 
 <body>
-    <nav>
-        <div class="inner-nav">
-            <div class="links">
-                <a class="anchors" href="#blog">Blog</a>
-                <a class="anchors" href="certifications/">Certifications</a>
-                <a class="anchors" href="codes/">Codes</a>
-                <a class="anchors" href="links/">Links</a>
+    <div class="everything">
+        <div class="me">
+            <img src="assets/images/home/santa lorenz.png" class="me-img">
+            <h1>Hi! I'm Martin</h1>
+            <p class="desc">Technophile BSIT Student. I like doing stuff.</p>
+            <p class="specialty">WEB WEV | GAME DEV | NETWORKS | CYBERSEC | GRAPHICS</p><br>
+            <div class="socials">
+                <a href="https://www.facebook.com/renzomrtn" target="_blank" class="social-link">
+                    <img src="links/facebook.png">
+                </a>
+                <a href="https://www.instagram.com/renzomrtn" target="_blank" class="social-link">
+                    <img src="links/instagram.png">
+                </a>
+                <a href="https://www.x.com/renzomrtn" target="_blank" class="social-link">
+                    <img src="links/twitter.png">
+                </a>
+                <a href="https://open.spotify.com/user/qksseqw7nzs0wbo9itykr11ii" target="_blank" class="social-link">
+                    <img src="links/spotify-logo.png">
+                </a>
+                <a href="https://www.linkedin.com/in/martin-lorenz-fajardo-679108277/" target="_blank" class="social-link">
+                    <img src="links/1.png">
+                </a>
+                <a href="https://www.linkedin.com/in/martin-lorenz-fajardo-679108277/" target="_blank" class="social-link">
+                    <img src="links/2.png">
+                </a>
+            </div>
+        </div>
+        <div class="card-links">
+            <div class="card">
+                <a class="anchors" href="games/">Games</a>
+            </div>
+            <div class="card">
+                <a class="anchors" href="programs/">Programs</a>
+            </div>
+            <div class="card">
+                <a class="anchors" href="websites/">Websites</a>
+            </div>
+            <div class="card">
+                <a class="anchors" href="musics/">Music</a>
+            </div>
+            <div class="card">
+                <a class="anchors" href="pixel-arts/">Pixel Arts</a>
+            </div>
+            <div class="card">
+                <a class="anchors" href="apps/">No-code Apps</a>
+            </div>
+            <div class="card">
+                <a class="anchors" href="captures/">Captures</a>
+            </div>
+            <div class="card">
+                <a class="anchors" href="codes/">Source Codes</a>
+            </div>
+            <div class="card">
                 <a class="anchors" href="donate/">Donate</a>
             </div>
         </div>
-    </nav>
-    <div class="everything">
-        <div class="left">
-            <div class="map-container">
-                <div id="map"></div>
-            </div>            
-            <div class="intro">
-                <div class="image">
-                    <img id="landscape-image" src="assets/images/home/me2.jpg">
-                </div>
-                <div class="introintro">
-                    <div class="nameholder">
-                        <h1 class="name">I'm Martin</h1>
-                    </div>
-                    <div class="hello">
-                        <p class="desc">Technophile IT Student. I just like doing stuff that comes into my mind like</p>
-                    </div>
-                    <div class="scope">
-                        <p class="s">Web Development</p>
-                        <p class="s">Programming</p>
-                        <p class="s">Network</p>
-                        <p class="s">Graphics</p>
-                        <p class="s">Cybersecurity</p>
-                    </div>
-                    <div class="socials">
-                        <a href="https://github.com/renzomrtn" target="_blank" class="social-link">
-                            <img src="assets/images/home/1.png">
-                        </a>
-                        <a href="https://www.linkedin.com/in/martin-lorenz-fajardo-679108277/" target="_blank" class="social-link">
-                            <img src="assets/images/home/2.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <div class="recent">
-                    <h3>Recent Projects</h3>
-                    <div class="cards">
-                        <div class="card">
-                            <img>
-                            <h5>Barangay Website</h5>
-                        </div>
-                        <div class="card">
-                            <a href="works/websites/flixplus.html" target="_blank">
-                                <img src="assets/images/home/flxpls.png" class="crd-img">
-                                <h5>Flixplus</h5>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="works/games/project-anatomy.html" target="_blank">
-                                <img src="assets/images/home/prjcrtntmy.png" class="crd-img">
-                                <h5>Project Anatomy</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog" id="blog">
-                    <h3>Blog</h3>
-                    <a href="https://martinlorenzfajardo4.wordpress.com/2024/11/21/why-coding-exercises-dont-help/" target="_blank"><h5>Why coding excercises don't help</h5></a>
-                    <a href="https://martinlorenzfajardo4.wordpress.com/2024/11/21/beyond-the-obstacle/" target="_blank"><h5>The defaults in html</h5></a>
-                    <a href="https://martinlorenzfajardo4.wordpress.com/2024/11/21/the-art-of-connection/" target="_blank"><h5>The easiest way to remove .html in your site's url</h5></a>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <h3>My Works</h3>
-            <div class="worksfolder">
-                <a class="work" href="games/">Games</a>
-                <a class="work" href="websites/">Websites</a>
-                <a class="work" href="programs/">Programs</a>
-                <a class="work" href="apps/">No-Code Apps</a>
-                <a class="work" href="pixel-arts/">Pixel Arts</a>
-                <a class="work" href="musics/">Music</a>
-                <a class="work" href="captures/">Captures</a>
-            </div>
-            <br>
-            <h3>Tech Stack</h3>
-            <div class="tech">
-                <div class="group">
-                    <img src="assets/images/home/html.png" class="techimg">
-                    <p>HTML 5</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/css.png" class="techimg">
-                    <p>CSS 3</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/bootstrap.png" class="techimg">
-                    <p>Bootstrap</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/react.png" class="techimg">
-                    <p>React.js</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/javascript.png" class="techimg">
-                    <p>Javascript</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/java.png" class="techimg">
-                    <p>Java</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/javafx.png" class="techimg">
-                    <p>Java FX</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/git.png" class="techimg">
-                    <p>Git</p>
-                </div> <!--
-                <div class="group">
-                    <img src="assets/images/home/windows.png" class="techimg">
-                    <p>Windows</p>
-                </div>
-                <div class="group">
-                    <img src="assets/images/home/linux.png" class="techimg">
-                    <p>Linux</p>
-                </div> -->
-            </div>
-            <br>
-            <h3>Work</h3>
-            <div class="experience">
-                <div class="work-card">
-                    <img src="assets/images/home/digitek.png" class="work-img">
-                    <div class="texts">
-                        <p>2019 - Present</p>
-                        <h4>Digitek Digital Photo Services</h4>
-                        <p>Editor</p>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <img src="assets/images/home/pandalivery.png" class="work-img">
-                    <div class="texts">
-                        <p>2023</p>
-                        <h4>Pandalivery</h4>
-                        <p>Intern</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <canvas id="stars"></canvas>
     </div>
-
-
-    <script src="assets/scripts/index.js"></script>
-
+    <script src="sample.js"></script>
 </body>
 
 </html>
