@@ -39,7 +39,7 @@ function createSnowflake() {
   snowflake.textContent = '❄'; // Snowflake icon
   snowflake.style.left = Math.random() * window.innerWidth + 'px';
   snowflake.style.fontSize = Math.random() * 20 + 10 + 'px'; // Random size
-  snowflake.style.animationDuration = Math.random() * 20 + 10 + 's'; // Random fall speed
+  snowflake.style.animationDuration = Math.random() * 20 + 30 + 's'; // Random fall speed
   snowflake.style.opacity = Math.random(); // Random opacity
 
   snowflakeContainer.appendChild(snowflake);
@@ -49,7 +49,7 @@ function createSnowflake() {
 }
 
 // Create new snowflakes at intervals
-setInterval(createSnowflake, 800);
+setInterval(createSnowflake, 900);
 
 // Start animations
 animateStars();
