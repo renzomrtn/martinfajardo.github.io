@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-
 body,
 html {
   margin: 0;
@@ -38,6 +37,7 @@ body a {
   display: flex;
   flex-wrap: wrap;
   padding: 20rem 5rem 5rem 5rem;
+  gap: 2rem;
 }
 
 .me {
@@ -45,7 +45,7 @@ body a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 45rem;
+  margin-bottom: 35rem;
 }
 
 .me-img {
@@ -85,26 +85,63 @@ body a {
   object-fit: cover;
 }
 
+.recent {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-works {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.work {
+  background-color: rgba(33, 1, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  width: 22rem;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+.work-img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.work-desc {
+  padding: 5px;
+}
+
+.work-desc p{
+  font-size: 12px;
+  color: grey;
+}
+
 .card-links {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  flex-direction: column;
 }
-
 
 .anchors {
   width: 18rem;
-  height: 5rem;
+  height: 10rem;
   border: 1px solid white;
-  background-color: rgba(138, 138, 138, 0.5);
-  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
   transition: transform 0.3s ease-in-out;
 }
