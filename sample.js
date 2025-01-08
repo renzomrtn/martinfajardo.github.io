@@ -1,3 +1,5 @@
+/*
+// CHRISTMAS
 const snowflakeContainer = document.getElementById('snowflakes');
 const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
@@ -33,6 +35,7 @@ function animateStars() {
   requestAnimationFrame(animateStars);
 }
 
+
 function createSnowflake() {
   const snowflake = document.createElement('div');
   snowflake.className = 'snowflake';
@@ -53,9 +56,10 @@ setInterval(createSnowflake, 900);
 
 // Start animations
 animateStars();
+*/
 
 
-/*
+// REGULAR
 const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
 
@@ -79,7 +83,7 @@ function animate() {
   stars.forEach(star => {
     ctx.beginPath();
     ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "yellow";
     ctx.fill();
     star.y += star.speed;
     if (star.y > canvas.height) {
@@ -91,4 +95,3 @@ function animate() {
 }
 
 animate();
-*/
