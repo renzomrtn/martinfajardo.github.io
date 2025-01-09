@@ -85,21 +85,26 @@ body a {
   object-fit: cover;
 }
 
-.recent {
+.middle {
   width: 100%;
-  height: 30rem;
+  display: flex;
+}
+
+.recent-links, .work-links{
+  width: 50% !important;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* recent works */
 .recent-works {
   width: 100%;
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
-
-.work {
+.recent-work-card {
   background-color: rgba(33, 1, 59, 0.5);
   display: flex;
   flex-direction: column;
@@ -108,33 +113,35 @@ body a {
   border: 1px solid white;
   border-radius: 12px;
 }
-
-.work-img {
+.recent-work-img {
   width: 100%;
   border-radius: 12px 12px 0 0;
 }
-
-.work-desc {
+.recent-work-desc {
   padding: 5px;
 }
-
-.work-desc p{
+.recent-work-desc p{
   font-size: 12px;
   color: grey;
 }
 
-.card-links {
+/* works */
+.work-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.work-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
-
 .anchors {
-  width: 18rem;
-  height: 10rem;
+  width: 10rem;
+  height: 5rem;
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
@@ -145,15 +152,11 @@ body a {
   color: white;
   transition: transform 0.3s ease-in-out;
 }
-
 .anchors:hover {
   background-color: rgba(71, 71, 71, 0.5);
   border: 1px solid rgb(8, 111, 151);
   transform: translateY(-6px);
 }
-
-
-
 
 /*========================================= MEDIA QUERY =========================================*/
 @media (max-width: 850px) {
