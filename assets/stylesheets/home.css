@@ -224,13 +224,36 @@ body a {
     width: 1.25rem;
   }
 
-  .card-links {
-    gap: 10px;
+  .middle {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .recent-links, .work-links{
+    width: 100% !important;
+  }  
+
+  .recent-title, .work-title {
+    font-size: 1.5rem;
+  }
+
+  .recent-work-card {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  .recent-work-card p {
+    font-size: 10px;
+  }
+
+  .recent-work-title {
+    font-size: 15px;
   }
 
   .anchors {
     font-size: 14px;
-    width: 12rem;
+    width: 8rem;
     height: 3rem;
   }
 }
