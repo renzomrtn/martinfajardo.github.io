@@ -72,3 +72,12 @@ a {
         background-color: #4e54c8;
     }
 }
+
+@media screen and (min-width: 300px) {
+    .content {
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
