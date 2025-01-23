@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url("../images/home/bg-scroll.png");
+  background-image: url("../images/backgrounds/Frame\ 4.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #d4d3d3;
@@ -53,13 +53,11 @@ body a {
   /* border-radius: 60%; */
 }
 
-.desc {
-  color: #8d8d8d;
-  margin-bottom: 5px;
-}
-
 .desc, .specialty  {
   text-align: center;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .socials {
@@ -193,13 +191,23 @@ body a {
     width: 1.50rem;
   }
 
+  .middle {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .recent-links, .work-links{
+    width: 100% !important;
+  }  
+
   .card-links {
     gap: 10px;
   }
 
   .anchors {
-    width: 15rem;
-    height: 3.5rem;
+    width: 10rem;
+    height: 10rem;
     font-size: 14px;
   }
 }
@@ -261,6 +269,6 @@ body a {
   .anchors {
     font-size: 14px;
     width: 8rem;
-    height: 3rem;
+    height: 7rem;
   }
 }
