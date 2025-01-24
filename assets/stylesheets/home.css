@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: #000000;
-  background-image: url("../images/backgrounds/Frame\ 5.png");
+  background-image: url("../images/backgrounds/Frame\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #d4d3d3;
@@ -167,7 +167,6 @@ body a {
   body {
     padding: 0;
     margin: 0;
-    background-image: url("../images/home/Frame 2.png");
   }
 
   .everything {
@@ -215,7 +214,6 @@ body a {
   body {
     padding: 0;
     margin: 0;
-    background-image: url("../images/home/Frame 1.png");
   }
 
   .everything {
