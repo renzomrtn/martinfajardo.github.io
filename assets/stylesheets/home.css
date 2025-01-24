@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  background-image: url("../images/backgrounds/Frame\ 4.png");
+  background-color: #000000;
+  background-image: url("../images/backgrounds/Frame\ 5.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #d4d3d3;
@@ -36,8 +37,8 @@ body a {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 20rem 5rem 5rem 5rem;
-  gap: 2rem;
+  padding: 26rem 5rem 5rem 5rem;
+  gap: 35rem;
 }
 
 .me {
@@ -45,7 +46,6 @@ body a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 35rem;
 }
 
 .me-img {
@@ -55,7 +55,6 @@ body a {
 
 .desc, .specialty  {
   text-align: center;
-  color: #000000;
   font-weight: 500;
   margin-bottom: 5px;
 }
